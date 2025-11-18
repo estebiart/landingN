@@ -9,7 +9,7 @@ const products = [
     purpose: "Suplemento proteico y mineral, con proteína verdadera y equivalente en NNP, que suman 40% de proteína bruta; que potencian la actividad y crecimiento de la flora ruminal del bovino, buscando una mejor digestión y aprovechamiento de los forrajes.",
     idealUse: "Ideal para novillas y programas de monta.",
     attribute: "Potencia el desarrollo, la ganancia de peso y la fertilidad del hato.",
-    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&h=600&fit=crop",
+    image: "/produce-1.png",
   },
   {
     name: "NUTRIMAX PRODUCE 1",
@@ -17,7 +17,7 @@ const products = [
     purpose: "Suplemento mineral diseñado para activar la flora ruminal y preparar el sistema digestivo para máxima eficiencia en la fase inicial.",
     idealUse: "Ideal para animales en fase de adaptación y levante.",
     attribute: "Optimiza la digestión y aprovechamiento del forraje desde el inicio.",
-    image: "https://images.unsplash.com/photo-1560493676-04071c5f467b?w=500&h=600&fit=crop",
+    image: "/produce-2.png",
   },
   {
     name: "NUTRIMAX PRODUCE 3",
@@ -25,7 +25,7 @@ const products = [
     purpose: "Suplemento de alta eficiencia proteica diseñado para animales en etapa de finalización, maximizando el rendimiento y conversión alimenticia.",
     idealUse: "Ideal para ganado en fase de finalización y engorde intensivo.",
     attribute: "Máxima eficiencia en conversión proteica y ganancia de peso acelerada.",
-    image: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=500&h=600&fit=crop",
+    image: "/Produce-3.png",
   },
   {
     name: "NUTRIMAX PRODUCE 2",
@@ -33,7 +33,7 @@ const products = [
     purpose: "Suplemento intermedio que mejora la digestibilidad y condición corporal, promoviendo una ganancia de peso sostenida y equilibrada.",
     idealUse: "Ideal para ganado en fase de desarrollo y crecimiento.",
     attribute: "Mejora la condición corporal y promueve ganancia de peso constante.",
-    image: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=500&h=600&fit=crop",
+    image: "/sostiene.png",
   },
 ];
 

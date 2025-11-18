@@ -7,7 +7,7 @@ const ExpertSection = () => {
             {/* Product Image */}
             <div className="flex justify-center">
               <img 
-                src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=600&fit=crop" 
+                src="/bultos.png" 
                 alt="Productos NUTRIMAX" 
                 className="w-full max-w-md h-auto"
               />

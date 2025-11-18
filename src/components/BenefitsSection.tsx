@@ -96,7 +96,7 @@ const BenefitsSection = () => {
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=700&fit=crop" 
+                src="/preña-+.png" 
                 alt="Producto NUTRIMAX" 
                 className="w-full h-auto rounded-2xl shadow-xl"
               />
