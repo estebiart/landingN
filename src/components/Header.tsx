@@ -8,7 +8,7 @@ const Header = () => {
           <div className="flex items-center">
             <span className="text-2xl font-bold">
               <img 
-                src="./logo.svg" 
+                src="./Nutrimax.svg" 
                 alt="logo NUTRIMAX" 
                 className="w-full h-auto rounded-2xl shadow-lg"
               />

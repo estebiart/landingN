@@ -7,8 +7,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="text-2xl font-bold mb-4">
-              <span className="text-white">NUTRI</span>
-              <span className="text-secondary">MAX</span>
+                <img 
+                src="./Nutrimax.svg" 
+                alt="logo NUTRIMAX" 
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
             </h3>
             <p className="text-white/90 font-semibold mb-2">
               De ganaderos para ganaderos
