@@ -7,8 +7,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <span className="text-2xl font-bold">
-              <span className="text-secondary">1Nutri</span>
-              <span className="text-secondary-foreground">max</span>
+              <img 
+                src="./logo.svg" 
+                alt="logo NUTRIMAX" 
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
             </span>
           </div>
           

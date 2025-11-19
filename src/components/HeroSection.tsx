@@ -6,7 +6,7 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center">
 <div 
   className="absolute inset-0 bg-cover bg-center"
-style={{ backgroundImage: 'url("/ganado.jpg")' }}
+style={{ backgroundImage: 'url("/banner.jpg")' }}
 
 >
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent" />
@@ -27,8 +27,7 @@ style={{ backgroundImage: 'url("/ganado.jpg")' }}
           </div>
           
           <p className="text-xl md:text-2xl text-primary mb-6 max-w-2xl ml-auto drop-shadow-lg">
-            Suplementos minerales y proteicos diseñados para maximizar el desempeño, 
-            la fertilidad y la rentabilidad de su hato.
+           Suplementos minerales, minerales nitrogenados y minerales proteinados, para maximizar el desempeño productivo mas kilos, mas preñeces y la rentabilidad de su hato.
           </p>
           
           <div className="mb-8">
@@ -41,7 +40,7 @@ style={{ backgroundImage: 'url("/ganado.jpg")' }}
         </div>
       </div>
           <p className="text-primary text-xl font-semibold drop-shadow-lg bg-secondary absolute w-[100%] bottom-0 md:pl-[50%]">
-            Nutrición especializada en Bovinos
+           Suplementación nutricional estratégica para bovinos
           </p>
     </section>
   );

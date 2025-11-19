@@ -66,7 +66,7 @@ const ProductCarousel = () => {
             Nuestros <span className="text-secondary font-bold">productos</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Cada producto está diseñado para una etapa específica del ciclo productivo.
+           Cada producto fue formulado para potenciar la productividad y la expresión de la genética en cada ciclo productivo.
           </p>
         </div>
 

@@ -16,32 +16,32 @@ const ExpertSection = () => {
             {/* Content */}
             <div className="text-white space-y-8">
               <h2 className="text-3xl md:text-4xl font-bold leading-tight">
-                Cada producto está diseñado por expertos en nutrición bovina
+                 Cada producto fue FORMULADO por expertos en nutrición bovina
               </h2>
               
               <p className="text-lg text-white/90 leading-relaxed">
-                Formulaciones específicas que responden a las necesidades reales del campo colombiano.
+                 Formulaciones específicas que responden a las necesidades reales del campo colombiano.
               </p>
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="bg-secondary w-12 h-12 rounded-full flex-shrink-0"></div>
                   <p className="text-white/95 pt-2">
-                    Suplementación para las condiciones del trópico bajo, medio y alto.
+                    Suplementación ideal para bovinos en pastoreo en trópico bajo.
                   </p>
                 </div>
 
                 <div className="flex items-start space-x-4">
                   <div className="bg-secondary w-12 h-12 rounded-full flex-shrink-0"></div>
                   <p className="text-white/95 pt-2">
-                    Respaldo técnico permanente con asesores zonales.
+                    Respaldo técnico permanente con asesores zonales
                   </p>
                 </div>
 
                 <div className="flex items-start space-x-4">
                   <div className="bg-secondary w-12 h-12 rounded-full flex-shrink-0"></div>
                   <p className="text-white/95 pt-2">
-                    Resultados medibles en reproducción, peso y condición corporal.
+                    Resultados tangibles en ganancias de peso y reproducción.
                   </p>
                 </div>
               </div>
