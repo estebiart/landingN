@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
+          {/* <div>
             <h4 className="text-lg font-bold mb-4">Enlaces Rápidos</h4>
             <ul className="space-y-2 text-white/80">
               <li className="hover:text-secondary cursor-pointer transition-colors">Inicio</li>
@@ -36,7 +36,7 @@ const Footer = () => {
               <li className="hover:text-secondary cursor-pointer transition-colors">Asesoría Técnica</li>
               <li className="hover:text-secondary cursor-pointer transition-colors">Blog Ganadero</li>
             </ul>
-          </div>
+          </div> */}
 
           <div>
             <h4 className="text-lg font-bold mb-4">Productos</h4>
