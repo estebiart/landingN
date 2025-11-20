@@ -3,38 +3,56 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const products = [
-  {
-    name: "NUTRIMAX +PRO",
-    category: "Suplemento proteico",
-    purpose: "Suplemento proteico y mineral, con proteína verdadera y equivalente en NNP, que suman 40% de proteína bruta; que potencian la actividad y crecimiento de la flora ruminal del bovino, buscando una mejor digestión y aprovechamiento de los forrajes.",
-    idealUse: "Ideal para novillas y programas de monta.",
-    attribute: "Potencia el desarrollo, la ganancia de peso y la fertilidad del hato.",
+    {
+    name: "Nutrimax Sostiene",
+    category: "Suplemento mineral especializado para bovinos.",
+    purpose: "Suplemento mineral especializado para hatos bovinos, optima en niveles de macro y micro minerales, imprescindibles para el correcto desarrollo y producción tanto de hembras y machos en diferentes etapas productivas.",
+    idealUse: "",
+    attribute: "Restablece el balance mineral y refuerza el desempeño productivo del hato.",
+    image: "/sostiene.png",
+  },
+    {
+    name: "Nutrimax Produce 1",
+    category: "Suplemento Mineral Nitrogenado - 29%NNP De adaptación",
+    purpose: "Suplemento proteico y mineral, con 29% de proteina equivalente en NNP, promueve la fermentación ruminal, favoreciendo la digestibilidad de forrajes de baja calidad. Aumentando el valor de la dieta suministrada y el desempeño productivo y reproductivo de los bovinos.",
+    idealUse: "",
+    attribute: "Estimula la flora ruminal y prepara al ganado para mayor aprovechamiento del forraje.",
     image: "/produce-1.png",
   },
   {
-    name: "NUTRIMAX PRODUCE 1",
-    category: "Suplemento mineral",
-    purpose: "Suplemento mineral diseñado para activar la flora ruminal y preparar el sistema digestivo para máxima eficiencia en la fase inicial.",
-    idealUse: "Ideal para animales en fase de adaptación y levante.",
-    attribute: "Optimiza la digestión y aprovechamiento del forraje desde el inicio.",
+    name: "Nutrimax Produce 2",
+    category: "Suplemento Mineral Nitrogenado - 58%NNP Desarrollo, progreso o Transición",
+    purpose: "Suplemento proteico y mineral, con 57% de proteina equivalente en NNP, promueve la fermentación ruminal, favoreciendo la digestibilidad de forrajes de baja calidad. Aumentando el valor de la dieta suministrada y el desempeño productivo y reproductivo de los bovinos.",
+    idealUse: "",
+    attribute: "Mejora la digestión y condición corporal en épocas de exigencia o verano.",
     image: "/produce-2.png",
   },
-  {
-    name: "NUTRIMAX PRODUCE 3",
-    category: "Suplemento avanzado",
-    purpose: "Suplemento de alta eficiencia proteica diseñado para animales en etapa de finalización, maximizando el rendimiento y conversión alimenticia.",
-    idealUse: "Ideal para ganado en fase de finalización y engorde intensivo.",
-    attribute: "Máxima eficiencia en conversión proteica y ganancia de peso acelerada.",
+    {
+    name: "Nutrimax Produce 3",
+    category: "Suplemento Mineral Nitrogenado - 87%NNP Avanzado",
+    purpose: "Suplemento proteico y mineral, con 85% de proteina equivalente en NNP, promueve la fermentación ruminal, favoreciendo la digestibilidad de forrajes de baja calidad. Aumentando el valor de la dieta suministrada y el desempeño productivo y reproductivo de los bovinos.",
+    idealUse: "",
+    attribute: "Máxima eficiencia proteica para alto desempeño en verano intenso.",
     image: "/Produce-3.png",
   },
-  {
-    name: "NUTRIMAX PRODUCE 2",
-    category: "Suplemento intermedio",
-    purpose: "Suplemento intermedio que mejora la digestibilidad y condición corporal, promoviendo una ganancia de peso sostenida y equilibrada.",
-    idealUse: "Ideal para ganado en fase de desarrollo y crecimiento.",
-    attribute: "Mejora la condición corporal y promueve ganancia de peso constante.",
-    image: "/sostiene.png",
+    {
+    name: "Nutrimax PREÑA+",
+    category: "Suplemento mineral especializado para cría",
+    purpose: "Suplemento mineral especializado, formulado con los macro y micro minerales necesarios para hembras bovinas destinadas a reproducción en sistemas de pastoreo. Ideal para programas de monta estacional y convencional, además de programas de inseminación artificial e inseminación a tiempo fijo",
+    idealUse: "",
+    attribute: "Favorece la fertilidad y salud reproductiva con alto aporte de fósforo y micro minerales.",
+    image: "/prena.png",
   },
+  {
+    name: "Nutrimax +Pro",
+    category: "Suplemento proteico y mineral de alto rendimiento.",
+    purpose: "Suplemento Proteinado, con minerales biodisponibles, proteína verdadera y equivalente del NNP, 40% de proteína bruta, que potencia la actividad y crecimiento de la flora rumial del bovino, buscando una mejor digestion y aprovechamiento de los forrajes.",
+    idealUse: "Ideal para novillas de levante destinadas a programas de IATF o estación de monta.Ideal en el destete, levante y finalización de la ceba.",
+    attribute: "Potencia el desarrollo, la ganancia de peso y la fertilidad del hato.",
+    image: "/+pro.png",
+  },
+
+
 ];
 
 const ProductCarousel = () => {
@@ -59,8 +77,9 @@ const ProductCarousel = () => {
   const currentProduct = products[currentIndex];
 
   return (
-    <section id="productos" className="py-24 bg-muted/30 relative">
-      <div className="container mx-auto px-4">
+    <section id="productos" >
+      <div className="py-24 bg-muted/30 relative">
+    <div className="container mx-auto px-4">
         <div className="text-center mb-16 space-y-4 fade-up">
           <h2 className="text-4xl md:text-5xl font-light text-foreground leading-tight">
             Nuestros <span className="text-secondary font-bold">productos</span>
@@ -165,6 +184,23 @@ const ProductCarousel = () => {
             ))}
           </div>
         </div>
+      </div>
+      </div>
+  
+               <div className="container w-full p-[60px] bg-primary/95  ">
+        <div className="text-center mb-12 space-y-6 fade-up">
+          <h2 className="text-4xl md:text-5xl font-light text-white leading-tight">
+            ¿Pensando en <span className="text-secondary font-bold">suplementación estratégica?</span>
+          </h2>
+          <p className="text-lg text-white max-w-4xl mx-auto font-light leading-relaxed">
+         Nuestros expertos en nutrición bovina están listos para asesorarte, elegir el producto ideal  e instaurar el plan nutricional que mejor se adapta a tu hato ganadero.
+          </p>
+                  <Button className="bg-secondary hover:bg-primary/90 text-primary-foreground">
+            Hablar con un asesor
+          </Button>
+        </div>
+
+
       </div>
     </section>
   );

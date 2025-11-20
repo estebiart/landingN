@@ -37,11 +37,8 @@ const ContactSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-20 space-y-6 fade-up">
           <h2 className="text-4xl md:text-6xl font-light text-foreground leading-tight">
-            Hablemos de tu <span className="text-secondary font-bold">proyecto ganadero</span>
+            Hablemos de su <span className="text-secondary font-bold">proyecto ganadero</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-light leading-relaxed">
-            Nuestro equipo técnico está listo para diseñar un plan nutricional personalizado
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">

@@ -42,7 +42,6 @@ const BenefitsSection = () => {
         </div>
 
         <div className="mb-20">
-          <h3 className="text-2xl font-semibold text-foreground mb-8 text-center">Beneficios</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {benefits.map((benefit, index) => (
               <div 

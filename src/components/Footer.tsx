@@ -8,7 +8,7 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4">
                 <img 
-                src="./Nutrimax.svg" 
+                src="./Nutrimax.png" 
                 alt="logo NUTRIMAX" 
                 className="w-full h-auto rounded-2xl shadow-lg"
               />

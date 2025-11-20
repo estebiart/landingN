@@ -6,9 +6,11 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <span className="text-2xl font-bold">
+            <span className="text-2xl font-bold w-[200px]">
               <img 
-                src="./Nutrimax.svg" 
+                src="./Nutrimax.png" 
+                width={200}
+                height={30}
                 alt="logo NUTRIMAX" 
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
