@@ -10,7 +10,7 @@ const Footer = () => {
                 <img 
                 src="./Nutrimax.png" 
                 alt="logo NUTRIMAX" 
-                className="w-full h-auto rounded-2xl shadow-lg"
+                className="w-full h-auto rounded-2xl "
               />
             </h3>
             <p className="text-white/90 font-semibold mb-2">
