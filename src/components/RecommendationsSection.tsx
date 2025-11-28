@@ -103,7 +103,7 @@ const RecommendationsSection = () => {
                 src="/bultos.png" 
                 alt="Productos NUTRIMAX apilados" 
                 className="w-full max-w-md h-auto"
-                width={500}
+                width={800}
               />
             </div>
           </div>
