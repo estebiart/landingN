@@ -17,9 +17,9 @@ style={{ backgroundImage: 'url("/banner.jpg")' }}
           <div className="bg-red md:flex md:h-[100vh]">
               <div className="md:flex-1 md:h-[110vh] flex justify-center items-end">
                     <img 
-                      src="/produce-1.png"
+                      src="/banner.png"
                       alt=""
-                      width={200}
+                      width={600}
                       className=""
                     />
               </div>

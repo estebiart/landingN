@@ -100,9 +100,10 @@ const RecommendationsSection = () => {
             {/* Product Stack Image */}
             <div className="flex justify-center">
               <img 
-                src="/+pro.png" 
+                src="/bultos.png" 
                 alt="Productos NUTRIMAX apilados" 
                 className="w-full max-w-md h-auto"
+                width={500}
               />
             </div>
           </div>
