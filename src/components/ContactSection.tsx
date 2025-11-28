@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { useState, FormEvent } from "react";
 
 const contactInfo = [
   {
@@ -29,6 +30,47 @@ const contactInfo = [
 ];
 
 const ContactSection = () => {
+  const [formData, setFormData] = useState({
+    nombre: "",
+    apellido: "",
+    email: "",
+    telefono: "",
+    mensaje: ""
+  });
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // Número de WhatsApp (reemplaza con el número real)
+    const phoneNumber = "573218113200"; // Formato internacional sin + ni espacios
+
+    // Construir el mensaje de WhatsApp
+    const mensaje = `*Nuevo contacto desde la web*%0A%0A` +
+      `*Nombre:* ${formData.nombre} ${formData.apellido}%0A` +
+      `*Email:* ${formData.email}%0A` +
+      `*Teléfono:* ${formData.telefono}%0A` +
+      `*Mensaje:* ${formData.mensaje}`;
+
+    // Abrir WhatsApp en una nueva ventana
+    window.open(`https://wa.me/${phoneNumber}?text=${mensaje}`, '_blank');
+
+    // Limpiar el formulario
+    setFormData({
+      nombre: "",
+      apellido: "",
+      email: "",
+      telefono: "",
+      mensaje: ""
+    });
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
   return (
     <section id="contacto" className="py-24 bg-[hsl(var(--nutrimax-blue-light))] relative">
       {/* Decorative stripe */}
@@ -69,7 +111,7 @@ const ContactSection = () => {
 
           {/* Contact Form */}
           <Card className="p-10 fade-up shadow-lg border-0 bg-white">
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="text-sm font-semibold text-foreground mb-2 block">
@@ -77,6 +119,9 @@ const ContactSection = () => {
                   </label>
                   <input
                     type="text"
+                    name="nombre"
+                    value={formData.nombre}
+                    onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-xl border-2 border-input bg-background text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition-all"
                     placeholder="Tu nombre"
@@ -88,6 +133,9 @@ const ContactSection = () => {
                   </label>
                   <input
                     type="text"
+                    name="apellido"
+                    value={formData.apellido}
+                    onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-xl border-2 border-input bg-background text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition-all"
                     placeholder="Tu apellido"
@@ -101,6 +149,9 @@ const ContactSection = () => {
                 </label>
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   required
                   className="w-full px-4 py-3 rounded-xl border-2 border-input bg-background text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition-all"
                   placeholder="tu@correo.com"
@@ -113,6 +164,9 @@ const ContactSection = () => {
                 </label>
                 <input
                   type="tel"
+                  name="telefono"
+                  value={formData.telefono}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 rounded-xl border-2 border-input bg-background text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition-all"
                   placeholder="+57 300 123 4567"
                 />
@@ -124,16 +178,19 @@ const ContactSection = () => {
                 </label>
                 <textarea
                   rows={4}
+                  name="mensaje"
+                  value={formData.mensaje}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 rounded-xl border-2 border-input bg-background text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary resize-none transition-all"
                   placeholder="Cuéntanos sobre tu proyecto ganadero..."
                 />
               </div>
               
-              <Button 
-                type="submit" 
+              <Button
+                type="submit"
                 className="w-full bg-secondary hover:bg-secondary/90 text-white py-6 text-lg rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105"
               >
-                Enviar mensaje
+                Enviar por WhatsApp
               </Button>
             </form>
           </Card>
