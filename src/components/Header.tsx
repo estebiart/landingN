@@ -29,7 +29,13 @@ const Header = () => {
             </a>
           </nav>
 
-          <Button className="bg-secondary hover:bg-primary/90 text-primary-foreground">
+          <Button
+            className="bg-secondary hover:bg-primary/90 text-primary-foreground"
+            onClick={() => {
+              const contactSection = document.getElementById("contacto");
+              contactSection?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             Hablar con un asesor
           </Button>
         </div>

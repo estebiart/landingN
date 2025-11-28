@@ -1,14 +1,18 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { FileText } from "lucide-react";
 
 const products = [
   {
-    name: "NUTRIMAX +PRO",
-    category: "Suplemento proteico",
-    purpose: "Suplemento proteico y mineral, con proteína verdadera y equivalente en NNP, que suman 40% de proteína bruta; que potencian la actividad y crecimiento de la flora ruminal del bovino, buscando una mejor digestión y aprovechamiento de los forrajes.",
-    idealUse: "Ideal para novillas y programas de monta.",
-    attribute: "Potencia el desarrollo, la ganancia de peso y la fertilidad del hato.",
+    name: "NUTRIMAX SOSTIENE",
+    category: "Suplemento base",
+    purpose: "Para suministro a machos y hembras en etapas de cría, levante y ceba, siempre a libre disposición y con acceso ilimitado al agua.",
+    idealUse: "Para todas las etapas productivas.",
+    attribute: "Versatilidad para todo el hato ganadero.",
     image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&h=400&fit=crop",
+    indicacionHembras: "Para suministro a machos y hembras en etapas de cría, levante y ceba, siempre a libre disposición y con acceso ilimitado al agua.",
+    indicacionMachos: "Para suministro a machos y hembras en etapas de cría, levante y ceba, siempre a libre disposición y con acceso ilimitado al agua."
   },
   {
     name: "NUTRIMAX PRODUCE 1",
@@ -17,14 +21,8 @@ const products = [
     idealUse: "Ideal para animales en fase de adaptación y levante.",
     attribute: "Optimiza la digestión y aprovechamiento del forraje desde el inicio.",
     image: "https://images.unsplash.com/photo-1560493676-04071c5f467b?w=500&h=400&fit=crop",
-  },
-  {
-    name: "NUTRIMAX PRODUCE 3",
-    category: "Suplemento avanzado",
-    purpose: "Suplemento de alta eficiencia proteica diseñado para animales en etapa de finalización, maximizando el rendimiento y conversión alimenticia.",
-    idealUse: "Ideal para ganado en fase de finalización y engorde intensivo.",
-    attribute: "Máxima eficiencia en conversión proteica y ganancia de peso acelerada.",
-    image: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=500&h=400&fit=crop",
+    indicacionHembras: "Suministre a terneras destetas, novillas de levante y vacas.",
+    indicacionMachos: "Suministre a toretes y toros, además de a machos de ceba."
   },
   {
     name: "NUTRIMAX PRODUCE 2",
@@ -33,6 +31,38 @@ const products = [
     idealUse: "Ideal para ganado en fase de desarrollo y crecimiento.",
     attribute: "Mejora la condición corporal y promueve ganancia de peso constante.",
     image: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=500&h=400&fit=crop",
+    indicacionHembras: "Suministre a vacas secas o con gestaciones tempranas, novillas de levante intermedio, o previo al inicio de estación de monta.",
+    indicacionMachos: "Suministre a toretes y toros, además de a machos de ceba."
+  },
+  {
+    name: "NUTRIMAX PRODUCE 3",
+    category: "Suplemento avanzado",
+    purpose: "Suplemento de alta eficiencia proteica diseñado para animales en etapa de finalización, maximizando el rendimiento y conversión alimenticia.",
+    idealUse: "Ideal para ganado en fase de finalización y engorde intensivo.",
+    attribute: "Máxima eficiencia en conversión proteica y ganancia de peso acelerada.",
+    image: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=500&h=400&fit=crop",
+    indicacionHembras: "Vacas en lactancia y novillas, durante temporada de monta.",
+    indicacionMachos: "Suministre a toretes y toros, además de a machos de ceba durante la finalización."
+  },
+  {
+    name: "NUTRIMAX PREÑA+",
+    category: "Suplemento reproductivo",
+    purpose: "Ideal para vacas de cría en periparto o inicio de la lactancia y estación de monta.",
+    idealUse: "Enfocado en etapa reproductiva.",
+    attribute: "Optimiza el rendimiento reproductivo del hato.",
+    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&h=400&fit=crop",
+    indicacionHembras: "Ideal para vacas de cría en periparto o inicio de la lactancia y estación de monta. En novillas de levante para cubrir sus requerimientos y promover crecimiento y desarrollo reproductivo.",
+    indicacionMachos: "En toretes y toros, ideal para un mayor desarrollo esquelético, rápido y eficiente crecimiento y preparación reproductiva."
+  },
+  {
+    name: "NUTRIMAX +PRO",
+    category: "Suplemento proteico",
+    purpose: "Suplemento proteico y mineral, con proteína verdadera y equivalente en NNP, que suman 40% de proteína bruta; que potencian la actividad y crecimiento de la flora ruminal del bovino, buscando una mejor digestión y aprovechamiento de los forrajes.",
+    idealUse: "Ideal para novillas y programas de monta.",
+    attribute: "Potencia el desarrollo, la ganancia de peso y la fertilidad del hato.",
+    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&h=400&fit=crop",
+    indicacionHembras: "Ideal para novillas de levante destinadas a programas de IATF o estación de monta.",
+    indicacionMachos: "Ideal en el destete, levante y finalización de la ceba."
   },
 ];
 
@@ -103,6 +133,61 @@ const ProductsSection = () => {
                         {product.attribute}
                       </p>
                     </div>
+
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button
+                          variant="outline"
+                          className="w-full mt-4 border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transition-all"
+                        >
+                          <FileText className="mr-2 h-4 w-4" />
+                          Ver Ficha Técnica
+                        </Button>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
+                        <DialogHeader>
+                          <DialogTitle className="text-2xl font-bold text-primary">
+                            Ficha Técnica - {product.name}
+                          </DialogTitle>
+                        </DialogHeader>
+
+                        <div className="space-y-6 mt-4">
+                          <div className="grid md:grid-cols-2 gap-6">
+                            {/* Indicaciones Hembras */}
+                            <div className="bg-pink-50 p-6 rounded-xl border-2 border-pink-200">
+                              <h3 className="text-lg font-bold text-pink-700 mb-4 flex items-center">
+                                <span className="mr-2">🐄</span>
+                                Indicación Hembras
+                              </h3>
+                              <p className="text-sm text-foreground leading-relaxed">
+                                {product.indicacionHembras}
+                              </p>
+                            </div>
+
+                            {/* Indicaciones Machos */}
+                            <div className="bg-blue-50 p-6 rounded-xl border-2 border-blue-200">
+                              <h3 className="text-lg font-bold text-blue-700 mb-4 flex items-center">
+                                <span className="mr-2">🐂</span>
+                                Indicación Machos
+                              </h3>
+                              <p className="text-sm text-foreground leading-relaxed">
+                                {product.indicacionMachos}
+                              </p>
+                            </div>
+                          </div>
+
+                          <div className="bg-primary/5 p-6 rounded-xl border border-primary/20">
+                            <h4 className="font-bold text-primary mb-2">Propósito del Producto</h4>
+                            <p className="text-sm text-muted-foreground">{product.purpose}</p>
+                          </div>
+
+                          <div className="bg-secondary/5 p-6 rounded-xl border border-secondary/20">
+                            <h4 className="font-bold text-secondary mb-2">Uso Ideal</h4>
+                            <p className="text-sm text-muted-foreground">{product.idealUse}</p>
+                          </div>
+                        </div>
+                      </DialogContent>
+                    </Dialog>
                   </div>
                 </div>
               </div>

@@ -37,7 +37,14 @@ style={{ backgroundImage: 'url("/banner.jpg")' }}
           </p>
           
           <div className="mb-8">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-secondary-foreground text-lg px-8 py-6">
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-secondary-foreground text-lg px-8 py-6"
+              onClick={() => {
+                const contactSection = document.getElementById("contacto");
+                contactSection?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               Quiero asesoría
             </Button>
           </div>

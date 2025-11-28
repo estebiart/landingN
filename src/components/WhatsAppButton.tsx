@@ -13,7 +13,7 @@ const WhatsAppButton = () => {
     >
       <MessageCircle size={32} className="group-hover:rotate-12 transition-transform" />
       <span className="absolute -top-2 -right-2 bg-primary text-white text-xs font-bold px-2 py-1 rounded-full">
-        Online
+        Asesoría
       </span>
     </button>
   );

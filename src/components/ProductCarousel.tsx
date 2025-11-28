@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, FileText } from "lucide-react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
 const products = [
     {
@@ -10,6 +11,8 @@ const products = [
     idealUse: " Crecimiento, desarrollo, adecuada actividad del sistema inmune y balance metabólico",
     attribute: "Formula que restablece el balance mineral y promueve un mejor desempeño productivo del hato.",
     image: "/sostiene.png",
+    indicacionHembras: "Para suministro a machos y hembras en etapas de cría, levante y ceba, siempre a libre disposición y con acceso ilimitado al agua.",
+    indicacionMachos: "Para suministro a machos y hembras en etapas de cría, levante y ceba, siempre a libre disposición y con acceso ilimitado al agua."
   },
     {
     name: "Nutrimax Produce 1",
@@ -18,6 +21,8 @@ const products = [
     idealUse: "Adapta y estimula crecimiento de la población microbiana ruminal, gracias al aporte de NNP.",
     attribute: "Estimula la flora ruminal y prepara su ganado para mayor aprovechamiento del forraje suministrado.",
     image: "/produce-1.png",
+    indicacionHembras: "Suministre a terneras destetas, novillas de levante y vacas.",
+    indicacionMachos: "Suministre a toretes y toros, además de a machos de ceba."
   },
   {
     name: "Nutrimax Produce 2",
@@ -26,6 +31,8 @@ const products = [
     idealUse: "Estimula crecimiento de la población microbiana ruminal, máximiza la conversión de nitrógeno a proteina microbiana.",
     attribute: "Mejora la digestión del forraje en temporadas retadoras secas, con forrajes pobres, buscando mantener o mejorar condición corporal",
     image: "/produce-2.png",
+    indicacionHembras: "Suministre a vacas secas o con gestaciones tempranas, novillas de levante intermedio, o previo al inicio de estación de monta.",
+    indicacionMachos: "Suministre a toretes y toros, además de a machos de ceba."
   },
     {
     name: "Nutrimax Produce 3",
@@ -34,6 +41,8 @@ const products = [
     idealUse: "Maximiza la sustitución de fuentes proteicas de alto costo (proteina verdadera) y compensa la dieta de forrajes de baja calidad.",
     attribute: "Máxima digestibilidad del forraje, promueve el aporte de proteína microbiana, favorecienco un mayor desempeño en verano intenso con forrajes pobres",
     image: "/Produce-3.png",
+    indicacionHembras: "Vacas en lactancia y novillas, durante temporada de monta.",
+    indicacionMachos: "Suministre a toretes y toros, además de a machos de ceba durante la finalización."
   },
     {
     name: "Nutrimax PREÑA+",
@@ -42,6 +51,8 @@ const products = [
     idealUse: "Crecimiento, desarrollo, adecuada actividad del sistema inmune y balance metabólico, además de potenciar la reproducción pilar fundamental de la ganadería de cría.",
     attribute: "Formulada para mejorar indicadores reproductivos y productivos, con alto aporte de fósforo y micro minerales.",
     image: "/prena.png",
+    indicacionHembras: "Ideal para vacas de cría en periparto o inicio de la lactancia y estación de monta. En novillas de levante para cubrir sus requerimientos y promover crecimiento y desarrollo reproductivo.",
+    indicacionMachos: "En toretes y toros, ideal para un mayor desarrollo esquelético, rápido y eficiente crecimiento y preparación reproductiva."
   },
   {
     name: "Nutrimax +Pro",
@@ -50,6 +61,8 @@ const products = [
     idealUse: "El aporte del 40% de proteína bruta total permite mayor sintesis de de proteina microbiana, aporte de aminoacidos y mejor digestión de la fibra.",
     attribute: "Formulada para potenciar el desarrollo, la ganancia de peso y la fertilidad del hato.",
     image: "/+pro.png",
+    indicacionHembras: "Ideal para novillas de levante destinadas a programas de IATF o estación de monta.",
+    indicacionMachos: "Ideal en el destete, levante y finalización de la ceba."
   },
 
 
@@ -162,9 +175,62 @@ const ProductCarousel = () => {
 
             {/* Ver ficha técnica button */}
             <div className="text-center mt-8">
-              <Button className="bg-secondary hover:bg-secondary/90 text-white px-8 py-6 rounded-xl font-semibold">
-                Ver ficha técnica
-              </Button>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button className="bg-secondary hover:bg-secondary/90 text-white px-8 py-6 rounded-xl font-semibold">
+                    <FileText className="mr-2 h-5 w-5" />
+                    Ver ficha técnica
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
+                  <DialogHeader>
+                    <DialogTitle className="text-2xl font-bold text-primary">
+                      Ficha Técnica - {currentProduct.name}
+                    </DialogTitle>
+                  </DialogHeader>
+
+                  <div className="space-y-6 mt-4">
+                    <div className="grid md:grid-cols-2 gap-6">
+                      {/* Indicaciones Hembras */}
+                      <div className="bg-pink-50 p-6 rounded-xl border-2 border-pink-200">
+                        <h3 className="text-lg font-bold text-pink-700 mb-4 flex items-center">
+                          <span className="mr-2">🐄</span>
+                          Indicación Hembras
+                        </h3>
+                        <p className="text-sm text-foreground leading-relaxed">
+                          {currentProduct.indicacionHembras}
+                        </p>
+                      </div>
+
+                      {/* Indicaciones Machos */}
+                      <div className="bg-blue-50 p-6 rounded-xl border-2 border-blue-200">
+                        <h3 className="text-lg font-bold text-blue-700 mb-4 flex items-center">
+                          <span className="mr-2">🐂</span>
+                          Indicación Machos
+                        </h3>
+                        <p className="text-sm text-foreground leading-relaxed">
+                          {currentProduct.indicacionMachos}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="bg-primary/5 p-6 rounded-xl border border-primary/20">
+                      <h4 className="font-bold text-primary mb-2">Propósito del Producto</h4>
+                      <p className="text-sm text-muted-foreground">{currentProduct.purpose}</p>
+                    </div>
+
+                    <div className="bg-secondary/5 p-6 rounded-xl border border-secondary/20">
+                      <h4 className="font-bold text-secondary mb-2">Uso Ideal</h4>
+                      <p className="text-sm text-muted-foreground">{currentProduct.idealUse}</p>
+                    </div>
+
+                    <div className="bg-primary/5 p-6 rounded-xl border border-primary/20">
+                      <h4 className="font-bold text-primary mb-2">Atributo</h4>
+                      <p className="text-sm text-muted-foreground">{currentProduct.attribute}</p>
+                    </div>
+                  </div>
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
 
@@ -195,7 +261,13 @@ const ProductCarousel = () => {
           <p className="text-lg text-white max-w-4xl mx-auto font-light leading-relaxed">
          Nuestros expertos en nutrición bovina están listos para asesorarte, elegir el producto ideal  e instaurar el plan nutricional que mejor se adapta a tu hato ganadero.
           </p>
-                  <Button className="bg-secondary hover:bg-primary/90 text-primary-foreground">
+                  <Button
+            className="bg-secondary hover:bg-primary/90 text-primary-foreground"
+            onClick={() => {
+              const contactSection = document.getElementById("contacto");
+              contactSection?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             Hablar con un asesor
           </Button>
         </div>
