@@ -36,7 +36,7 @@ const BenefitsSection = () => {
           <h2 className="text-3xl md:text-4xl font-light text-foreground leading-tight">
            Una formula precisa <span className="text-primary font-bold"> a cada etapa productiva y época del año</span>
           </h2>
-          <p className="text-base text-muted-foreground max-w-4xl mx-auto font-light leading-relaxed">
+          <p className="text-base   max-w-4xl mx-auto font-light leading-relaxed">
            Nutrimax formula suplementos adaptados a los diferentes ciclos de producción, del levante a la reproducción o la ceba de bovinos. Balance mineral, aporte de nitrógeno y proteína, resultados visibles en campo.
           </p>
         </div>

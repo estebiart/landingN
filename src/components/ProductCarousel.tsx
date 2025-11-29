@@ -97,7 +97,7 @@ const ProductCarousel = () => {
           <h2 className="text-3xl md:text-4xl font-light text-foreground leading-tight">
             Nuestros <span className="text-primary font-bold">productos</span>
           </h2>
-          <p className="text-base text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base   max-w-2xl mx-auto">
            Cada producto fue formulado para potenciar la productividad y la expresión de la genética en cada ciclo productivo.
           </p>
         </div>
@@ -135,7 +135,7 @@ const ProductCarousel = () => {
                 <div className="bg-secondary w-16 h-16 rounded-full mx-auto md:mx-0"></div>
                 <div>
                   <h4 className="text-sm font-bold text-primary uppercase mb-2">PROPÓSITO</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm   leading-relaxed">
                     {currentProduct.purpose}
                   </p>
                 </div>
@@ -158,7 +158,7 @@ const ProductCarousel = () => {
                 <div>
                   <div className="bg-secondary w-16 h-16 rounded-full mx-auto md:mx-0 mb-4"></div>
                   <h4 className="text-sm font-bold text-secondary uppercase mb-2">USO IDEAL</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm   leading-relaxed">
                     {currentProduct.idealUse}
                   </p>
                 </div>
@@ -166,7 +166,7 @@ const ProductCarousel = () => {
                 <div>
                   <div className="bg-secondary w-16 h-16 rounded-full mx-auto md:mx-0 mb-4"></div>
                   <h4 className="text-sm font-bold text-primary uppercase mb-2">ATRIBUTO</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm   leading-relaxed">
                     {currentProduct.attribute}
                   </p>
                 </div>
@@ -216,17 +216,17 @@ const ProductCarousel = () => {
 
                     <div className="bg-primary/5 p-6 rounded-xl border border-primary/20">
                       <h4 className="font-bold text-primary mb-2">Propósito del Producto</h4>
-                      <p className="text-sm text-muted-foreground">{currentProduct.purpose}</p>
+                      <p className="text-sm  ">{currentProduct.purpose}</p>
                     </div>
 
                     <div className="bg-secondary/5 p-6 rounded-xl border border-secondary/20">
                       <h4 className="font-bold text-secondary mb-2">Uso Ideal</h4>
-                      <p className="text-sm text-muted-foreground">{currentProduct.idealUse}</p>
+                      <p className="text-sm  ">{currentProduct.idealUse}</p>
                     </div>
 
                     <div className="bg-primary/5 p-6 rounded-xl border border-primary/20">
                       <h4 className="font-bold text-primary mb-2">Atributo</h4>
-                      <p className="text-sm text-muted-foreground">{currentProduct.attribute}</p>
+                      <p className="text-sm  ">{currentProduct.attribute}</p>
                     </div>
                   </div>
                 </DialogContent>

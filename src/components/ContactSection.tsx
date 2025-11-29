@@ -99,7 +99,7 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground mb-2 text-lg">{info.title}</h4>
-                      <p className="text-muted-foreground leading-relaxed font-light">
+                      <p className="  leading-relaxed font-light">
                         {info.content}
                       </p>
                     </div>
@@ -123,7 +123,7 @@ const ContactSection = () => {
                     value={formData.nombre}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-xl border-2 border-input bg-background text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition-all"
+                    className="w-full px-4 py-3 rounded-xl border-2 border-input bg-background text-foreground placeholder: /60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition-all"
                     placeholder="Tu nombre"
                   />
                 </div>
@@ -137,7 +137,7 @@ const ContactSection = () => {
                     value={formData.apellido}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-xl border-2 border-input bg-background text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition-all"
+                    className="w-full px-4 py-3 rounded-xl border-2 border-input bg-background text-foreground placeholder: /60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition-all"
                     placeholder="Tu apellido"
                   />
                 </div>
@@ -153,7 +153,7 @@ const ContactSection = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-xl border-2 border-input bg-background text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition-all"
+                  className="w-full px-4 py-3 rounded-xl border-2 border-input bg-background text-foreground placeholder: /60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition-all"
                   placeholder="tu@correo.com"
                 />
               </div>
@@ -167,7 +167,7 @@ const ContactSection = () => {
                   name="telefono"
                   value={formData.telefono}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-xl border-2 border-input bg-background text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition-all"
+                  className="w-full px-4 py-3 rounded-xl border-2 border-input bg-background text-foreground placeholder: /60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition-all"
                   placeholder="+57 300 123 4567"
                 />
               </div>
@@ -181,7 +181,7 @@ const ContactSection = () => {
                   name="mensaje"
                   value={formData.mensaje}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-xl border-2 border-input bg-background text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary resize-none transition-all"
+                  className="w-full px-4 py-3 rounded-xl border-2 border-input bg-background text-foreground placeholder: /60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary resize-none transition-all"
                   placeholder="Cuéntanos sobre tu proyecto ganadero..."
                 />
               </div>

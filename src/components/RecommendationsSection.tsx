@@ -30,7 +30,7 @@ const RecommendationsSection = () => {
           <h2 className="text-3xl md:text-4xl font-light text-foreground leading-tight">
             Elección y uso correcto,<span className="text-primary font-bold">  resultados visibles</span>
           </h2>
-          <p className="text-base text-muted-foreground max-w-4xl mx-auto font-light leading-relaxed">
+          <p className="text-base   max-w-4xl mx-auto font-light leading-relaxed">
           Cada producto de Nutrimax esta formulado para complementar y potenciar la dieta de ganado en pastoreo, en época seca o de lluvia y cada etapa productiva.
           </p>
         </div>
@@ -59,7 +59,7 @@ const RecommendationsSection = () => {
       </div>
       <div className="container mx-auto px-4">
         <div className="bg-secondary rounded-3xl overflow-visible relative">
-          <div className="grid md:grid-cols-2 gap-8 items-center p-8 md:py-0 md:px-16">
+          <div className="grid md:grid-cols-2 gap-8 items-center p-8 md:py-0 md:pl-16">
             {/* Content */}
             <div className="text-white space-y-8">
               <h2 className="text-2xl md:text-3xl font-light leading-tight">

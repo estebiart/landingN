@@ -77,7 +77,7 @@ const ProductsSection = () => {
           <h2 className="text-4xl md:text-6xl font-light text-foreground leading-tight">
             Nuestros <span className="text-secondary font-bold">Productos</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-xl   max-w-2xl mx-auto font-light leading-relaxed">
             Cada producto está diseñado para una etapa específica del ciclo productivo
           </p>
         </div>
@@ -115,21 +115,21 @@ const ProductsSection = () => {
                   <div className="space-y-4">
                     <div>
                       <h4 className="text-sm font-bold text-primary uppercase mb-2">Propósito</h4>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
+                      <p className="text-sm   leading-relaxed">
                         {product.purpose}
                       </p>
                     </div>
 
                     <div>
                       <h4 className="text-sm font-bold text-secondary uppercase mb-2">Uso ideal</h4>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
+                      <p className="text-sm   leading-relaxed">
                         {product.idealUse}
                       </p>
                     </div>
 
                     <div>
                       <h4 className="text-sm font-bold text-primary uppercase mb-2">Atributo</h4>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
+                      <p className="text-sm   leading-relaxed">
                         {product.attribute}
                       </p>
                     </div>
@@ -178,12 +178,12 @@ const ProductsSection = () => {
 
                           <div className="bg-primary/5 p-6 rounded-xl border border-primary/20">
                             <h4 className="font-bold text-primary mb-2">Propósito del Producto</h4>
-                            <p className="text-sm text-muted-foreground">{product.purpose}</p>
+                            <p className="text-sm  ">{product.purpose}</p>
                           </div>
 
                           <div className="bg-secondary/5 p-6 rounded-xl border border-secondary/20">
                             <h4 className="font-bold text-secondary mb-2">Uso Ideal</h4>
-                            <p className="text-sm text-muted-foreground">{product.idealUse}</p>
+                            <p className="text-sm  ">{product.idealUse}</p>
                           </div>
                         </div>
                       </DialogContent>
