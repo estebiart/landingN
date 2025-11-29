@@ -59,7 +59,7 @@ const RecommendationsSection = () => {
       </div>
       <div className="container mx-auto px-4">
         <div className="bg-secondary rounded-3xl overflow-visible relative">
-          <div className="grid md:grid-cols-2 gap-8 items-center p-8 md:p-16">
+          <div className="grid md:grid-cols-2 gap-8 items-center p-8 md:py-0 md:px-16">
             {/* Content */}
             <div className="text-white space-y-8">
               <h2 className="text-2xl md:text-3xl font-light leading-tight">
