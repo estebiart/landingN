@@ -94,10 +94,10 @@ const ProductCarousel = () => {
       <div className="py-24 bg-muted/30 relative">
     <div className="container mx-auto px-4">
         <div className="text-center mb-16 space-y-4 fade-up">
-          <h2 className="text-4xl md:text-5xl font-light text-foreground leading-tight">
-            Nuestros <span className="text-secondary font-bold">productos</span>
+          <h2 className="text-3xl md:text-4xl font-light text-foreground leading-tight">
+            Nuestros <span className="text-primary font-bold">productos</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base text-muted-foreground max-w-2xl mx-auto">
            Cada producto fue formulado para potenciar la productividad y la expresión de la genética en cada ciclo productivo.
           </p>
         </div>
@@ -123,7 +123,7 @@ const ProductCarousel = () => {
           {/* Product Card */}
           <div className="bg-muted/50 rounded-3xl p-8 md:p-12 fade-up">
             <div className="text-center mb-8">
-              <h3 className="text-3xl md:text-4xl font-bold mb-2">
+              <h3 className="text-2xl md:text-3xl font-bold mb-2">
                 <span className="text-secondary">{currentProduct.name.split(' ')[0]}</span>
                 <span className="text-primary"> {currentProduct.name.split(' ').slice(1).join(' ')}</span>
               </h3>
@@ -253,16 +253,16 @@ const ProductCarousel = () => {
       </div>
       </div>
   
-               <div className="container w-full p-[60px] bg-primary/95  ">
+               <div className="container w-full p-[60px] bg-primary/95 rounded-3xl">
         <div className="text-center mb-12 space-y-6 fade-up">
-          <h2 className="text-4xl md:text-5xl font-light text-white leading-tight">
+          <h2 className="text-3xl md:text-4xl font-light text-white leading-tight">
             ¿Pensando en <span className="text-secondary font-bold">suplementación estratégica?</span>
           </h2>
-          <p className="text-lg text-white max-w-4xl mx-auto font-light leading-relaxed">
+          <p className="text-base text-white max-w-4xl mx-auto font-light leading-relaxed">
          Nuestros expertos en nutrición bovina están listos para asesorarte, elegir el producto ideal  e instaurar el plan nutricional que mejor se adapta a tu hato ganadero.
           </p>
                   <Button
-            className="bg-secondary hover:bg-primary/90 text-primary-foreground"
+            className="bg-secondary hover:bg-secondary/90 text-primary text-base font-semibold"
             onClick={() => {
               const contactSection = document.getElementById("contacto");
               contactSection?.scrollIntoView({ behavior: "smooth" });

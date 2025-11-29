@@ -6,41 +6,47 @@ const ExpertSection = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center p-8 md:p-16">
             {/* Product Image */}
             <div className="flex justify-center">
-              <img 
-                src="/produce-2.png" 
-                alt="Productos NUTRIMAX" 
+              <img
+                src="/produce-2.png"
+                alt="Productos NUTRIMAX"
                 className="w-full max-w-md h-auto"
               />
             </div>
 
             {/* Content */}
             <div className="text-white space-y-8">
-              <h2 className="text-3xl md:text-4xl font-bold leading-tight">
+              <h2 className="text-2xl md:text-3xl font-bold leading-tight">
                  Cada producto fue FORMULADO por expertos en nutrición bovina
               </h2>
-              
-              <p className="text-lg text-white/90 leading-relaxed">
+
+              <p className="text-base text-white/90 leading-relaxed">
                  Formulaciones específicas que responden a las necesidades reales del campo colombiano.
               </p>
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-secondary w-12 h-12 rounded-full flex-shrink-0"></div>
-                  <p className="text-white/95 pt-2">
+                  <div className=" w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center p-2">
+                    <img src="/icons/Suplementacion.svg" alt="Suplementación" className="w-8 h-8" />
+                  </div>
+                  <p className="text-white/95 pt-2 text-sm">
                     Suplementación ideal para bovinos en pastoreo en trópico bajo.
                   </p>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-secondary w-12 h-12 rounded-full flex-shrink-0"></div>
-                  <p className="text-white/95 pt-2">
+                  <div className="w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center p-2">
+                    <img src="/icons/Respaldo.svg" alt="Respaldo" className="w-8 h-8" />
+                  </div>
+                  <p className="text-white/95 pt-2 text-sm">
                     Respaldo técnico permanente con asesores zonales
                   </p>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-secondary w-12 h-12 rounded-full flex-shrink-0"></div>
-                  <p className="text-white/95 pt-2">
+                  <div className=" w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center p-2">
+                    <img src="/icons/Resultados.svg" alt="Resultados" className="w-8 h-8" />
+                  </div>
+                  <p className="text-white/95 pt-2 text-sm">
                     Resultados tangibles en ganancias de peso y reproducción.
                   </p>
                 </div>

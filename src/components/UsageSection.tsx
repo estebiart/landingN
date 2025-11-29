@@ -32,11 +32,11 @@ const UsageSection = () => {
       
       <div className="container mx-auto px-4">
         <div className="text-center mb-20 space-y-6 fade-up">
-          <h2 className="text-4xl md:text-6xl font-light text-foreground leading-tight">
-            Uso correcto, <span className="text-secondary font-bold">resultados visibles</span>
+          <h2 className="text-3xl md:text-4xl font-light text-foreground leading-tight">
+            Uso correcto, <span className="text-primary font-bold">resultados visibles</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed">
-            Cada producto NUTRIMAX está formulado para integrarse naturalmente a la dieta del ganado 
+          <p className="text-base text-muted-foreground max-w-3xl mx-auto font-light leading-relaxed">
+            Cada producto NUTRIMAX está formulado para integrarse naturalmente a la dieta del ganado
             y adaptarse al clima y etapa productiva
           </p>
         </div>
