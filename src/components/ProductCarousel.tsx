@@ -144,7 +144,7 @@ const ProductCarousel = () => {
               {/* Center Column - Product Image */}
               <div className="flex justify-center">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-secondary/20 rounded-[3rem] transform rotate-6"></div>
+    
                   <img 
                     src={currentProduct.image} 
                     alt={currentProduct.name}
