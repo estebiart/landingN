@@ -148,7 +148,7 @@ const ProductCarousel = () => {
                   <img 
                     src={currentProduct.image} 
                     alt={currentProduct.name}
-                    className="relative w-full max-w-xs h-auto rounded-[3rem] shadow-2xl"
+                    className="relative w-full max-w-xs h-auto "
                   />
                 </div>
               </div>

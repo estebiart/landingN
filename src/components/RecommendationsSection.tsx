@@ -57,11 +57,11 @@ const RecommendationsSection = () => {
         </div>
 
       </div>
-      <div className="container mx-auto px-4">
-        <div className="bg-secondary rounded-3xl overflow-visible relative">
+      <div className="container mx-auto px-4 flex justify-center">
+        <div className="bg-secondary rounded-3xl overflow-visible relative md:w-[80%]">
           <div className="grid md:grid-cols-2 gap-8 items-center p-8 md:py-0 md:pl-16">
             {/* Content */}
-            <div className="text-white space-y-8">
+            <div className="text-white space-y-8 md:p-[8px]">
               <h2 className="text-2xl md:text-3xl font-light leading-tight">
                 Recomendaciones <span className="font-bold">importantes</span>
               </h2>
@@ -102,7 +102,7 @@ const RecommendationsSection = () => {
               <img
                 src="/bultos.png"
                 alt="Productos NUTRIMAX apilados"
-                className="w-full h-auto relative md:-mb-24 md:-mt-12"
+                className=" h-auto relative md:-mb-24 md:-mt-12 md:mr-[-186px] md:max-w-[627px]"
                 width={900}
               />
             </div>

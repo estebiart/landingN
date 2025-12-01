@@ -2,19 +2,19 @@ const ExpertSection = () => {
   return (
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4">
-        <div className="bg-primary rounded-3xl overflow-hidden">
-          <div className="grid md:grid-cols-2 gap-8 items-center p-8 md:p-16">
+        <div className="bg-primary rounded-3xl overflow-visible">
+          <div className="grid md:grid-cols-2 gap-8 items-center p-8 md:p-0">
             {/* Product Image */}
-            <div className="flex justify-center">
+            <div className="flex justify-center md:justify-start">
               <img
-                src="/produce-2.png"
+                src="/expert.png"
                 alt="Productos NUTRIMAX"
-                className="w-full max-w-md h-auto"
+                className="w-full max-w-md h-auto md:-mb-32"
               />
             </div>
 
             {/* Content */}
-            <div className="text-white space-y-8">
+            <div className="text-white space-y-8 md:py-8">
               <h2 className="text-2xl md:text-3xl font-bold leading-tight">
                  Cada producto fue FORMULADO por expertos en nutrición bovina
               </h2>
