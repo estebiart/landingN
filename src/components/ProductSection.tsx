@@ -156,7 +156,7 @@ const ProductsSection = () => {
                             {/* Indicaciones Hembras */}
                             <div className="bg-pink-50 p-6 rounded-xl border-2 border-pink-200">
                               <h3 className="text-lg font-bold text-pink-700 mb-4 flex items-center">
-                                <span className="mr-2">🐄</span>
+                                <img src="/icons/icono-hembras.svg" alt="Hembras" className="w-6 h-6 mr-2" />
                                 Indicación Hembras
                               </h3>
                               <p className="text-sm text-foreground leading-relaxed">
@@ -167,7 +167,7 @@ const ProductsSection = () => {
                             {/* Indicaciones Machos */}
                             <div className="bg-blue-50 p-6 rounded-xl border-2 border-blue-200">
                               <h3 className="text-lg font-bold text-blue-700 mb-4 flex items-center">
-                                <span className="mr-2">🐂</span>
+                                <img src="/icons/icono-machos.svg" alt="Machos" className="w-6 h-6 mr-2" />
                                 Indicación Machos
                               </h3>
                               <p className="text-sm text-foreground leading-relaxed">
