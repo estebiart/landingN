@@ -58,38 +58,46 @@ const RecommendationsSection = () => {
 
       </div>
       <div className="container mx-auto px-4 flex justify-center">
-        <div className="bg-secondary rounded-3xl overflow-visible relative md:w-[80%]">
-          <div className="grid md:grid-cols-2 gap-8 items-center p-8 md:py-0 md:pl-16">
+        <div className="bg-secondary rounded-3xl overflow-visible relative md:w-[70%]">
+          <div className="grid md:grid-cols-[2fr_1fr] gap-8 md:gap-0 items-center p-8 md:py-0 md:pl-18">
             {/* Content */}
-            <div className="text-white space-y-8 md:p-[8px]">
+            <div className="text-white space-y-8 md:py-[24px] md:pl-[16px]">
               <h2 className="text-2xl md:text-3xl font-light leading-tight">
-                Recomendaciones <span className="font-bold">importantes</span>
+                Recomendaciones <span className="font-bold text-primary">importantes</span>
               </h2>
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-primary w-12 h-12 rounded-full flex-shrink-0"></div>
+                  <div className="bg-primary w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center p-2">
+                    <img src="/icons/icono agua.svg" alt="Agua" className="w-8 h-8" />
+                  </div>
                   <p className="text-white/95 pt-2 leading-relaxed text-sm">
                     Asegure acceso permanente a agua limpia y fresca.
                   </p>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-primary w-12 h-12 rounded-full flex-shrink-0"></div>
+                  <div className="bg-primary w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center p-2">
+                    <img src="/icons/icono transiciones.svg" alt="Transiciones" className="w-8 h-8" />
+                  </div>
                   <p className="text-white/95 pt-2 leading-relaxed text-sm">
                     Realice transiciones semanales entre productos 25/75, 50/50, 75/25 y 100%
                   </p>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-primary w-12 h-12 rounded-full flex-shrink-0"></div>
+                  <div className="bg-primary w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center p-2">
+                    <img src="/icons/icono monitoree.svg" alt="Monitoreo" className="w-8 h-8" />
+                  </div>
                   <p className="text-white/95 pt-2 leading-relaxed text-sm">
                     Monitoree el consumo diario y ajuste según sus necesidades.
                   </p>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-primary w-12 h-12 rounded-full flex-shrink-0"></div>
+                  <div className="bg-primary w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center p-2">
+                    <img src="/icons/icono almacenaje.svg" alt="Almacenaje" className="w-8 h-8" />
+                  </div>
                   <p className="text-white/95 pt-2 leading-relaxed text-sm">
                    Almacene sobre estibas retirado del piso y paredes, en un lugar fresco y protegido del sol y la humedad.
                   </p>
@@ -102,7 +110,7 @@ const RecommendationsSection = () => {
               <img
                 src="/bultos.png"
                 alt="Productos NUTRIMAX apilados"
-                className=" h-auto relative md:-mb-24 md:-mt-12 md:mr-[-186px] md:max-w-[627px]"
+                className=" h-auto relative md:-mb-24 md:-mt-12 md:mr-[-286px] md:max-w-[627px]"
                 width={900}
               />
             </div>

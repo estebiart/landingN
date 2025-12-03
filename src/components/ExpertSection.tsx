@@ -1,15 +1,15 @@
 const ExpertSection = () => {
   return (
     <section className="py-24 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="bg-primary rounded-3xl overflow-visible">
+      <div className="container mx-auto px-4 flex justify-center ">
+        <div className="bg-primary rounded-3xl overflow-visible md:w-[70%]">
           <div className="grid md:grid-cols-2 gap-8 items-center p-8 md:p-0">
             {/* Product Image */}
             <div className="flex justify-center md:justify-start">
               <img
                 src="/expert.png"
                 alt="Productos NUTRIMAX"
-                className="w-full max-w-md h-auto md:-mb-32"
+                className="w-full h-auto md:-mb-40"
               />
             </div>
 
@@ -25,7 +25,7 @@ const ExpertSection = () => {
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className=" w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center p-2">
+                  <div className="bg-secondary w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center p-2">
                     <img src="/icons/Suplementacion.svg" alt="Suplementación" className="w-8 h-8" />
                   </div>
                   <p className="text-white/95 pt-2 text-sm">
@@ -34,7 +34,7 @@ const ExpertSection = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center p-2">
+                  <div className="bg-secondary  w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center p-2">
                     <img src="/icons/Respaldo.svg" alt="Respaldo" className="w-8 h-8" />
                   </div>
                   <p className="text-white/95 pt-2 text-sm">
@@ -43,7 +43,7 @@ const ExpertSection = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className=" w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center p-2">
+                  <div className=" bg-secondary  w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center p-2">
                     <img src="/icons/Resultados.svg" alt="Resultados" className="w-8 h-8" />
                   </div>
                   <p className="text-white/95 pt-2 text-sm">

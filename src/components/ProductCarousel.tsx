@@ -253,7 +253,7 @@ const ProductCarousel = () => {
       </div>
       </div>
   
-               <div className="container w-full p-[60px] bg-primary/95 rounded-3xl">
+      <div className="w-[100vw] p-[60px] bg-primary/95">
         <div className="text-center mb-12 space-y-6 fade-up">
           <h2 className="text-3xl md:text-4xl font-light text-white leading-tight">
             ¿Pensando en <span className="text-secondary font-bold">suplementación estratégica?</span>

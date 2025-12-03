@@ -19,6 +19,13 @@ const Footer = () => {
             <p className="text-white/80 text-sm mb-4">
               Suplementos minerales y proteicos de la más alta calidad para la nutrición bovina.
             </p>
+            <div className="mb-4">
+              <img
+                src="/Logo-HSJ.svg"
+                alt="Logo HSJ"
+                className="w-32 h-auto"
+              />
+            </div>
             <div className="space-y-1 text-white/80 text-sm">
               <p>HSJ: Calle 82 No. 9-65 Oficina 502</p>
               <p>Bogotá D.C., Colombia</p>
