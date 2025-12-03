@@ -30,7 +30,7 @@ const Header = () => {
           </nav>
 
           <Button
-            className="bg-secondary hover:bg-secondary/90 text-primary text-sm font-semibold"
+            className="bg-secondary hover:bg-secondary/90 text-primary text-sm font-semibold hidden md:block"
             onClick={() => {
               const contactSection = document.getElementById("contacto");
               contactSection?.scrollIntoView({ behavior: "smooth" });
