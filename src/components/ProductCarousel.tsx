@@ -130,16 +130,24 @@ const ProductCarousel = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 items-center">
-              {/* Left Column - PROPÓSITO */}
+              {/* Left Column -  Finalidad */}
               <div className="space-y-4">
-                <div className="bg-secondary w-16 h-16 rounded-full mx-auto md:mx-0"></div>
+
                 <div>
-                  <h4 className="text-sm font-bold text-primary uppercase mb-2">PROPÓSITO</h4>
+                  <h4 className="text-sm font-bold text-primary uppercase mb-2">Finalidad</h4>
                   <p className="text-sm   leading-relaxed">
                     {currentProduct.purpose}
                   </p>
                 </div>
+                               <div>
+      
+                  <h4 className="text-sm font-bold  text-primary uppercase mb-2">Carácteristicas</h4>
+                  <p className="text-sm   leading-relaxed">
+                    {currentProduct.idealUse}
+                  </p>
+                </div>
               </div>
+              
 
               {/* Center Column - Product Image */}
               <div className="flex justify-center">
@@ -156,18 +164,18 @@ const ProductCarousel = () => {
               {/* Right Column - USO IDEAL & ATRIBUTO */}
               <div className="space-y-6">
                 <div>
-                  <div className="bg-secondary w-16 h-16 rounded-full mx-auto md:mx-0 mb-4"></div>
-                  <h4 className="text-sm font-bold text-secondary uppercase mb-2">USO IDEAL</h4>
+                  <div className="bg-secondary w-16 h-16 rounded-full mx-auto md:mx-0 mb-4 flex items-center justify-center"><img src="/icons/icono-hembras.svg" alt="Hembras" className="w-8 h-8 mr-2" /></div>
+                  <h4 className="text-sm font-bold  text-primary uppercase mb-2">Hembras</h4>
                   <p className="text-sm   leading-relaxed">
-                    {currentProduct.idealUse}
+                     {currentProduct.indicacionHembras}
                   </p>
                 </div>
 
                 <div>
-                  <div className="bg-secondary w-16 h-16 rounded-full mx-auto md:mx-0 mb-4"></div>
-                  <h4 className="text-sm font-bold text-primary uppercase mb-2">ATRIBUTO</h4>
+                  <div className="bg-secondary w-16 h-16 rounded-full mx-auto md:mx-0 mb-4 flex justify-center items-center">  <img src="/icons/icono-machos.svg" alt="Machos" className="w-8 h-8 mr-2" /></div>
+                  <h4 className="text-sm font-bold text-primary uppercase mb-2">Machos</h4>
                   <p className="text-sm   leading-relaxed">
-                    {currentProduct.attribute}
+                      {currentProduct.indicacionMachos}
                   </p>
                 </div>
               </div>
@@ -215,7 +223,7 @@ const ProductCarousel = () => {
                     </div>
 
                     <div className="bg-primary/5 p-6 rounded-xl border border-primary/20">
-                      <h4 className="font-bold text-primary mb-2">Propósito del Producto</h4>
+                      <h4 className="font-bold text-primary mb-2"> Finalidad del Producto</h4>
                       <p className="text-sm  ">{currentProduct.purpose}</p>
                     </div>
 

@@ -114,7 +114,7 @@ const ProductsSection = () => {
 
                   <div className="space-y-4">
                     <div>
-                      <h4 className="text-sm font-bold text-primary uppercase mb-2">Propósito</h4>
+                      <h4 className="text-sm font-bold text-primary uppercase mb-2"> Finalidad</h4>
                       <p className="text-sm   leading-relaxed">
                         {product.purpose}
                       </p>
@@ -177,7 +177,7 @@ const ProductsSection = () => {
                           </div>
 
                           <div className="bg-primary/5 p-6 rounded-xl border border-primary/20">
-                            <h4 className="font-bold text-primary mb-2">Propósito del Producto</h4>
+                            <h4 className="font-bold text-primary mb-2"> Finalidad del Producto</h4>
                             <p className="text-sm  ">{product.purpose}</p>
                           </div>
 
