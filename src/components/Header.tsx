@@ -12,7 +12,7 @@ const Header = () => {
                 width={200}
                 height={30}
                 alt="logo NUTRIMAX" 
-                className="w-full h-auto rounded-2xl"
+                className="w-full h-auto"
               />
             </span>
           </div>

@@ -10,7 +10,7 @@ const Footer = () => {
                 <img 
                 src="./Nutrimax.png" 
                 alt="logo NUTRIMAX" 
-                className="w-full h-auto rounded-2xl "
+                className="w-64 h-auto "
               />
             </h3>
             <p className="text-white/90 font-semibold mb-2">
@@ -19,6 +19,7 @@ const Footer = () => {
             <p className="text-white/80 text-sm mb-4">
               Suplementos minerales y proteicos de la más alta calidad para la nutrición bovina.
             </p>
+            <p>Una marca respaldada por</p>
             <div className="mb-4">
               <img
                 src="/Logo-HSJ.svg"
@@ -76,8 +77,7 @@ const Footer = () => {
 
         <div className="border-t border-white/20 pt-8 text-center space-y-2">
           <p className="text-white/90 font-semibold">NUTRIMAX – De ganaderos para ganaderos</p>
-          <p className="text-white/60 text-sm">&copy; 2024 NUTRIMAX. Todos los derechos reservados.</p>
-          <p className="text-white/60 text-sm">&copy; 2025 GENPRO. Todos los derechos reservados.</p>
+          <p className="text-white/60 text-sm">&copy; 2026 GENPRO. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
