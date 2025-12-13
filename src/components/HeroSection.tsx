@@ -14,7 +14,7 @@ style={{ backgroundImage: 'url("/banner.jpg")' }}
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-right animate-fade-in">
           <div className="bg-red md:flex md:h-[100vh]">
-              <div className="md:flex-1 md:h-[110vh] flex justify-center items-end my-5 md:my-0 md:block hidden">
+              <div className="md:flex-1 md:h-[110vh] justify-center items-end my-5 md:my-0 md:flex hidden">
                     <img 
                       src="/banner.png"
                       alt=""
