@@ -11,7 +11,6 @@ style={{ backgroundImage: 'url("/banner.jpg")' }}
 >
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent" />
       </div>
-      <p>hola</p>
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-right animate-fade-in">
           <div className="bg-red md:flex md:h-[100vh]">
