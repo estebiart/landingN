@@ -9,7 +9,7 @@ const ExpertSection = () => {
               <img
                 src="/expert.png"
                 alt="Productos NUTRIMAX"
-                className="w-full h-auto md:-mb-40"
+                className="w-full md:h-[600px] h-[400px] md:-mb-20"
               />
             </div>
 
