@@ -94,7 +94,7 @@ const ProductCarousel = () => {
       <div className="py-24 bg-muted/30 relative">
     <div className="container mx-auto px-4">
         <div className="text-center mb-16 space-y-4 fade-up">
-          <h2 className="text-3xl md:text-4xl font-light text-foreground leading-tight">
+          <h2 className="text-3xl md:text-4xl  text-foreground leading-tight">
             Nuestros <span className="text-primary font-bold">productos</span>
           </h2>
           <p className="text-base   max-w-2xl mx-auto">
@@ -141,7 +141,7 @@ const ProductCarousel = () => {
                 </div>
                                <div>
       
-                  <h4 className="text-sm font-bold  text-primary uppercase mb-2">Carácteristicas</h4>
+                  <h4 className="text-sm font-bold  text-primary uppercase mb-2">Carácterísticas</h4>
                   <p className="text-sm   leading-relaxed">
                     {currentProduct.idealUse}
                   </p>
@@ -263,10 +263,10 @@ const ProductCarousel = () => {
   
       <div className="w-[100vw] p-[60px] bg-primary/95">
         <div className="text-center mb-12 space-y-6 fade-up">
-          <h2 className="text-3xl md:text-4xl font-light text-white leading-tight">
+          <h2 className="text-3xl md:text-4xl  text-white leading-tight">
             ¿Pensando en <span className="text-secondary font-bold">suplementación estratégica?</span>
           </h2>
-          <p className="text-base text-white max-w-4xl mx-auto font-light leading-relaxed">
+          <p className="text-base text-white max-w-4xl mx-auto  leading-relaxed">
          Nuestros expertos en nutrición bovina están listos para asesorarte, elegir el producto ideal  e instaurar el plan nutricional que mejor se adapta a tu hato ganadero.
           </p>
                   <Button

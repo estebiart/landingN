@@ -78,7 +78,7 @@ const ContactSection = () => {
       
       <div className="container mx-auto px-4">
         <div className="text-center mb-20 space-y-6 fade-up">
-          <h2 className="text-3xl md:text-4xl font-light text-foreground leading-tight">
+          <h2 className="text-3xl md:text-4xl  text-foreground leading-tight">
             Hablemos de su <span className="text-primary font-bold">proyecto ganadero</span>
           </h2>
         </div>
@@ -87,7 +87,7 @@ const ContactSection = () => {
           {/* Contact Info */}
           <div className="space-y-8 fade-up">
             <div>
-              <h3 className="text-2xl font-light text-foreground mb-8"><span className="font-semibold">Información</span> de contacto</h3>
+              <h3 className="text-2xl  text-foreground mb-8"><span className="font-semibold">Información</span> de contacto</h3>
               <div className="space-y-5">
                 {contactInfo.map((info, index) => (
                   <div 
@@ -99,7 +99,7 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground mb-2 text-lg">{info.title}</h4>
-                      <p className="  leading-relaxed font-light">
+                      <p className="  leading-relaxed ">
                         {info.content}
                       </p>
                     </div>

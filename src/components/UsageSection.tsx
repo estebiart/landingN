@@ -32,10 +32,10 @@ const UsageSection = () => {
       
       <div className="container mx-auto px-4">
         <div className="text-center mb-20 space-y-6 fade-up">
-          <h2 className="text-3xl md:text-4xl font-light text-foreground leading-tight">
+          <h2 className="text-3xl md:text-4xl  text-foreground leading-tight">
             Uso correcto, <span className="text-primary font-bold">resultados visibles</span>
           </h2>
-          <p className="text-base   max-w-3xl mx-auto font-light leading-relaxed">
+          <p className="text-base   max-w-3xl mx-auto  leading-relaxed">
             Cada producto NUTRIMAX está formulado para integrarse naturalmente a la dieta del ganado
             y adaptarse al clima y etapa productiva
           </p>
@@ -55,7 +55,7 @@ const UsageSection = () => {
               <h3 className="text-xl font-semibold mb-4 text-foreground">
                 {step.title}
               </h3>
-              <p className="  leading-relaxed font-light">
+              <p className="  leading-relaxed ">
                 {step.description}
               </p>
             </Card>
@@ -65,31 +65,31 @@ const UsageSection = () => {
         <div className="bg-[hsl(var(--nutrimax-green-light))] rounded-3xl p-12 md:p-16">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-3xl md:text-4xl font-light text-foreground mb-8">
+              <h3 className="text-3xl md:text-4xl  text-foreground mb-8">
                 <span className="font-bold text-secondary">Recomendaciones</span> importantes
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="  font-light text-lg">
+                  <p className="   text-lg">
                     Asegure acceso permanente a agua limpia y fresca
                   </p>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="  font-light text-lg">
+                  <p className="   text-lg">
                     Realice transiciones graduales entre productos (7-10 días)
                   </p>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="  font-light text-lg">
+                  <p className="   text-lg">
                     Monitoree el consumo diario y ajuste según necesidades
                   </p>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="  font-light text-lg">
+                  <p className="   text-lg">
                     Almacene en lugar seco y protegido de la humedad
                   </p>
                 </li>

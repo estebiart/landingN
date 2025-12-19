@@ -74,10 +74,10 @@ const ProductsSection = () => {
       
       <div className="container mx-auto px-4">
         <div className="text-center mb-20 space-y-6 fade-up">
-          <h2 className="text-4xl md:text-6xl font-light text-foreground leading-tight">
+          <h2 className="text-4xl md:text-6xl  text-foreground leading-tight">
             Nuestros <span className="text-secondary font-bold">Productos</span>
           </h2>
-          <p className="text-xl   max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-xl   max-w-2xl mx-auto  leading-relaxed">
             Cada producto está diseñado para una etapa específica del ciclo productivo
           </p>
         </div>
@@ -196,10 +196,10 @@ const ProductsSection = () => {
         </div>
 
         <div className="bg-primary rounded-3xl p-12 md:p-16 text-center text-white shadow-xl fade-up">
-          <h3 className="text-3xl md:text-4xl font-light mb-6">
+          <h3 className="text-3xl md:text-4xl  mb-6">
             ¿Necesita asesoría para <span className="font-bold text-secondary">escoger el producto ideal?</span>
           </h3>
-          <p className="text-lg mb-10 text-white/90 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-lg mb-10 text-white/90 max-w-2xl mx-auto  leading-relaxed">
             Nuestros expertos en nutrición bovina están listos para asesorarte y diseñar un plan nutricional adaptado a tu hato
           </p>
           <Button 

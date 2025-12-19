@@ -20,7 +20,7 @@ const ExpertSection = () => {
               </h2>
 
               <p className="text-base text-white/90 leading-relaxed">
-                 Formulaciones específicas que responden a las necesidades reales del campo colombiano.
+                 Formulaciones específicas que responden a las necesidades reales del campo colombiano, suplementando y potenciando el rumen de sus animales.
               </p>
 
               <div className="space-y-6">

@@ -55,7 +55,7 @@ style={{ backgroundImage: 'url("/banner.jpg")' }}
 
         </div>
       </div>
-          <p className="text-primary text-center text-base font-semibold drop-shadow-lg bg-secondary absolute w-[100%] bottom-0 md:pl-[50%]">
+          <p className="text-primary text-center text-[20px] font-semibold drop-shadow-lg bg-secondary absolute w-[100%] bottom-0 md:pl-[50%]">
            Suplementación nutricional estratégica para bovinos
           </p>
     </section>

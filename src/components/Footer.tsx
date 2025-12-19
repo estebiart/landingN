@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { Facebook, Instagram, Youtube as YouTube } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -59,17 +59,32 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-bold mb-4">Síguenos</h4>
             <div className="flex space-x-4">
-              <a href="#" className="bg-white/10 hover:bg-secondary p-3 rounded-full transition-all hover:scale-110">
+              <a
+                href="https://www.facebook.com/HSJVichada/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/10 hover:bg-secondary p-3 rounded-full transition-all hover:scale-110"
+                aria-label="Visitar Facebook"
+              >
                 <Facebook size={20} />
               </a>
-              <a href="#" className="bg-white/10 hover:bg-secondary p-3 rounded-full transition-all hover:scale-110">
+              <a
+                href="https://www.instagram.com/hsj_vichada/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/10 hover:bg-secondary p-3 rounded-full transition-all hover:scale-110"
+                aria-label="Visitar Instagram"
+              >
                 <Instagram size={20} />
               </a>
-              <a href="#" className="bg-white/10 hover:bg-secondary p-3 rounded-full transition-all hover:scale-110">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="bg-white/10 hover:bg-secondary p-3 rounded-full transition-all hover:scale-110">
-                <Youtube size={20} />
+              <a
+                href="https://bit.ly/2FMGQfp"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/10 hover:bg-secondary p-3 rounded-full transition-all hover:scale-110"
+                aria-label="Visitar YouTube"
+              >
+                <YouTube size={20} />
               </a>
             </div>
           </div>
