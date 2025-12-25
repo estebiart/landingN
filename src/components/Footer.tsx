@@ -20,6 +20,10 @@ const Footer = () => {
               Suplementos minerales y proteicos de la más alta calidad para la nutrición bovina.
             </p>
             <p>Una marca respaldada por</p>
+
+          </div>
+
+          <div>
             <div className="mb-4">
               <img
                 src="/Logo-HSJ.svg"
@@ -34,17 +38,6 @@ const Footer = () => {
               <p>Email: <a href="mailto:aclientes@hsj.com.co" className="hover:text-secondary transition-colors">aclientes@hsj.com.co</a></p>
             </div>
           </div>
-
-          {/* <div>
-            <h4 className="text-lg font-bold mb-4">Enlaces Rápidos</h4>
-            <ul className="space-y-2 text-white/80">
-              <li className="hover:text-secondary cursor-pointer transition-colors">Inicio</li>
-              <li className="hover:text-secondary cursor-pointer transition-colors">Sobre Nosotros</li>
-              <li className="hover:text-secondary cursor-pointer transition-colors">Certificaciones</li>
-              <li className="hover:text-secondary cursor-pointer transition-colors">Asesoría Técnica</li>
-              <li className="hover:text-secondary cursor-pointer transition-colors">Blog Ganadero</li>
-            </ul>
-          </div> */}
 
           <div>
             <h4 className="text-lg font-bold mb-4">Productos</h4>

@@ -23,12 +23,9 @@ style={{ backgroundImage: 'url("/banner.jpg")' }}
                     />
               </div>
             <div className=" md:flex-1 mb-6 flex flex-col justify-center">
-              <h1 className="text-4xl md:text-5xl font-bold text-secondary-foreground mb-2">
-                De ganaderos
-              </h1>
               <div className="flex justify-end">
               <h1 className="text-4xl inline-blockbackdrop-blur-sm rounded-3xl  bg-primary/90  md:text-5xl font-bold text-secondary-foreground w-[600px] px-8 py-6">
-                para ganaderos
+                 De ganaderos para ganaderos
               </h1>
               </div>
           <p className="text-lg md:text-xl text-white mb-6 max-w-2xl ml-auto drop-shadow-lg">

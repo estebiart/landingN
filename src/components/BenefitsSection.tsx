@@ -1,28 +1,27 @@
-import { Heart, Shield, TrendingUp, Droplets } from "lucide-react";
-import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import {TrendingUp } from "lucide-react";
+
 
 const benefits = [
   {
-    icon: Droplets,
+    icon: "/icons/balance.png",
     title: "Balance mineral óptimo",
     description: "Formulación precisa que aporta los minerales esenciales que el forraje no proporciona",
     color: "text-primary"
   },
   {
-    icon: TrendingUp,
+    icon: "/icons/comprobados.png",
     title: "Mejor aprovechamiento del forraje",
     description: "Potencia la fermentación ruminal, mejora digestibilidad y estimula el consumo voluntario de forraje.",
     color: "text-secondary"
   },
   {
-    icon: Shield,
+    icon: "/icons/comprobados.png",
     title: "Resultados comprobados en reproducción",
     description: "Suplementación que busca reducir días abiertos, mejorar tasas de concepción y favorece la función reproductiva.",
     color: "text-primary"
   },
   {
-    icon: Heart,
+    icon: "/icons/ganancia.png",
     title: "Desarrollo y ganancia de peso",
     description: "Acelera el crecimiento en etapas de levante y optimiza el engorde en las diferentes etapas.",
     color: "text-secondary"
@@ -55,7 +54,7 @@ const BenefitsSection = () => {
               >
                 <div className="flex justify-center mb-4">
                   <div className="bg-muted p-4 rounded-full">
-                    <benefit.icon className={`w-8 h-8 ${benefit.color}`} strokeWidth={2} />
+                    <img src={benefit.icon} className={`w-8 h-8 ${benefit.color}`} />
                   </div>
                 </div>
                 <h4 className="text-base font-semibold text-foreground leading-snug mb-2">
