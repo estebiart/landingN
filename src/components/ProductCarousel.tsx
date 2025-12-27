@@ -11,6 +11,7 @@ const products = [
     idealUse: " Crecimiento, desarrollo, adecuada actividad del sistema inmune y balance metabólico",
     attribute: "Formula que restablece el balance mineral y promueve un mejor desempeño productivo del hato.",
     image: "/sostiene.png",
+    logoNombre: "/logos/Nutrimax_sostiene.png",
     indicacionHembras: "Para suministro a machos y hembras en etapas de cría, levante y ceba, siempre a libre disposición y con acceso ilimitado al agua.",
     indicacionMachos: "Para suministro a machos y hembras en etapas de cría, levante y ceba, siempre a libre disposición y con acceso ilimitado al agua."
   },
@@ -21,6 +22,7 @@ const products = [
     idealUse: "Adapta y estimula crecimiento de la población microbiana ruminal, gracias al aporte de NNP.",
     attribute: "Estimula la flora ruminal y prepara su ganado para mayor aprovechamiento del forraje suministrado.",
     image: "/produce-1.png",
+    logoNombre: "/logos/Nutrimax-produce-1.png",
     indicacionHembras: "Suministre a terneras destetas, novillas de levante y vacas.",
     indicacionMachos: "Suministre a toretes y toros, además de a machos de ceba."
   },
@@ -31,6 +33,7 @@ const products = [
     idealUse: "Estimula crecimiento de la población microbiana ruminal, máximiza la conversión de nitrógeno a proteina microbiana.",
     attribute: "Mejora la digestión del forraje en temporadas retadoras secas, con forrajes pobres, buscando mantener o mejorar condición corporal",
     image: "/produce-2.png",
+    logoNombre: "/logos/Nutrimax-produce-2.png",
     indicacionHembras: "Suministre a vacas secas o con gestaciones tempranas, novillas de levante intermedio, o previo al inicio de estación de monta.",
     indicacionMachos: "Suministre a toretes y toros, además de a machos de ceba."
   },
@@ -41,6 +44,7 @@ const products = [
     idealUse: "Maximiza la sustitución de fuentes proteicas de alto costo (proteina verdadera) y compensa la dieta de forrajes de baja calidad.",
     attribute: "Máxima digestibilidad del forraje, promueve el aporte de proteína microbiana, favorecienco un mayor desempeño en verano intenso con forrajes pobres",
     image: "/Produce-3.png",
+    logoNombre: "/logos/Nutrimax-produce-3.png",
     indicacionHembras: "Vacas en lactancia y novillas, durante temporada de monta.",
     indicacionMachos: "Suministre a toretes y toros, además de a machos de ceba durante la finalización."
   },
@@ -51,6 +55,7 @@ const products = [
     idealUse: "Crecimiento, desarrollo, adecuada actividad del sistema inmune y balance metabólico, además de potenciar la reproducción pilar fundamental de la ganadería de cría.",
     attribute: "Formulada para mejorar indicadores reproductivos y productivos, con alto aporte de fósforo y micro minerales.",
     image: "/prena.png",
+    logoNombre: "/logos/Nutrimax-prena.png",
     indicacionHembras: "Ideal para vacas de cría en periparto o inicio de la lactancia y estación de monta. En novillas de levante para cubrir sus requerimientos y promover crecimiento y desarrollo reproductivo.",
     indicacionMachos: "En toretes y toros, ideal para un mayor desarrollo esquelético, rápido y eficiente crecimiento y preparación reproductiva."
   },
@@ -61,6 +66,7 @@ const products = [
     idealUse: "El aporte del 40% de proteína bruta total permite mayor sintesis de de proteina microbiana, aporte de aminoacidos y mejor digestión de la fibra.",
     attribute: "Formulada para potenciar el desarrollo, la ganancia de peso y la fertilidad del hato.",
     image: "/+pro.png",
+    logoNombre: "/logos/Nutrimax-pro.png",
     indicacionHembras: "Ideal para novillas de levante destinadas a programas de IATF o estación de monta.",
     indicacionMachos: "Ideal en el destete, levante y finalización de la ceba."
   },
@@ -122,11 +128,12 @@ const ProductCarousel = () => {
 
           {/* Product Card */}
           <div className="bg-muted/50 rounded-3xl p-8 md:p-12 fade-up">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl md:text-3xl font-bold mb-2">
-                <span className="text-secondary">{currentProduct.name.split(' ')[0]}</span>
-                <span className="text-primary"> {currentProduct.name.split(' ').slice(1).join(' ')}</span>
-              </h3>
+            <div className="flex justify-center mb-8">
+              <img
+                src={currentProduct.logoNombre}
+                alt={`Logo ${currentProduct.name}`}
+                className="h-16 md:h-20 w-auto object-contain"
+              />
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 items-center">

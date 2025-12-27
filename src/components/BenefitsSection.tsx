@@ -9,7 +9,7 @@ const benefits = [
     color: "text-primary"
   },
   {
-    icon: "/icons/comprobados.png",
+    icon: "/icons/forraje.png",
     title: "Mejor aprovechamiento del forraje",
     description: "Potencia la fermentación ruminal, mejora digestibilidad y estimula el consumo voluntario de forraje.",
     color: "text-secondary"
