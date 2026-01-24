@@ -55,7 +55,7 @@ const products = [
     indicacionMachos: "En toretes y toros, ideal para un mayor desarrollo esquelético, rápido y eficiente crecimiento y preparación reproductiva."
   },
   {
-    name: "NUTRIMAX +PRO",
+    name: "NUTRIMAX PROT",
     category: "Suplemento proteico",
     purpose: "Suplemento proteico y mineral, con proteína verdadera y equivalente en NNP, que suman 40% de proteína bruta; que potencian la actividad y crecimiento de la flora ruminal del bovino, buscando una mejor digestión y aprovechamiento de los forrajes.",
     idealUse: "Ideal para novillas y programas de monta.",
@@ -200,7 +200,7 @@ const ProductsSection = () => {
             ¿Necesita asesoría para <span className="font-bold text-secondary">escoger el producto ideal?</span>
           </h3>
           <p className="text-lg mb-10 text-white/90 max-w-2xl mx-auto  leading-relaxed">
-            Nuestros expertos en nutrición bovina están listos para asesorarte y diseñar un plan nutricional adaptado a tu hato
+            Nuestros expertos en nutrición bovina están listos para asesorarle y diseñar un plan nutricional adaptado a suhato
           </p>
           <Button 
             className="bg-secondary text-white hover:bg-secondary/90 text-lg px-12 py-7 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105"

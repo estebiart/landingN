@@ -124,7 +124,7 @@ const ContactSection = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-xl border-2 border-input bg-background text-foreground placeholder: /60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition-all"
-                    placeholder="Tu nombre"
+                    placeholder="sunombre"
                   />
                 </div>
                 <div>
@@ -138,7 +138,7 @@ const ContactSection = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-xl border-2 border-input bg-background text-foreground placeholder: /60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition-all"
-                    placeholder="Tu apellido"
+                    placeholder="suapellido"
                   />
                 </div>
               </div>
@@ -182,7 +182,7 @@ const ContactSection = () => {
                   value={formData.mensaje}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-xl border-2 border-input bg-background text-foreground placeholder: /60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary resize-none transition-all"
-                  placeholder="Cuéntanos sobre tu proyecto ganadero..."
+                  placeholder="Cuéntanos sobre suproyecto ganadero..."
                 />
               </div>
               

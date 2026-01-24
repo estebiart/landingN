@@ -1,6 +1,6 @@
 const ExpertSection = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className=" bg-white">
       <div className="container mx-auto px-4 flex justify-center ">
         <div className="bg-primary rounded-3xl overflow-visible md:w-[70%]">
           <div className="grid md:grid-cols-2 gap-8 items-center p-8 md:p-0">
@@ -14,13 +14,13 @@ const ExpertSection = () => {
             </div>
 
             {/* Content */}
-            <div className="text-white space-y-8 md:py-8">
+            <div className="text-white space-y-8 md:py-8 px-2">
               <h2 className="text-2xl md:text-3xl font-bold leading-tight">
                  Cada producto fue FORMULADO por expertos en nutrición bovina
               </h2>
 
               <p className="text-base text-white/90 leading-relaxed">
-                 Formulaciones específicas que responden a las necesidades reales del campo colombiano, suplementando y potenciando el rumen de sus animales.
+                 Formulaciones específicas que responden a las necesidades reales del campo colombiano, suplementando y potenciando el rumen de su rebaño.
               </p>
 
               <div className="space-y-6">

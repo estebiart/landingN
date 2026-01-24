@@ -24,8 +24,8 @@ style={{ backgroundImage: 'url("/banner.jpg")' }}
               </div>
             <div className=" md:flex-1 mb-6 flex flex-col justify-center">
               <div className="flex justify-end">
-              <h1 className="text-4xl inline-blockbackdrop-blur-sm rounded-3xl  bg-primary/90  md:text-5xl font-bold text-secondary-foreground w-[600px] px-8 py-6">
-                 De ganaderos para ganaderos
+              <h1 className="text-2xl inline-blockbackdrop-blur-sm rounded-3xl  bg-primary/90  md:text-5xl font-bold text-secondary-foreground w-[600px] px-8 py-6">
+                 Suplementación nutricional estratégica para bovinos  
               </h1>
               </div>
           <p className="text-lg md:text-xl text-white mb-6 max-w-2xl ml-auto drop-shadow-lg">
@@ -53,7 +53,7 @@ style={{ backgroundImage: 'url("/banner.jpg")' }}
         </div>
       </div>
           <p className="text-primary text-center text-[20px] font-semibold drop-shadow-lg bg-secondary absolute w-[100%] bottom-0 md:pl-[50%]">
-           Suplementación nutricional estratégica para bovinos
+          De ganaderos para ganaderos
           </p>
     </section>
   );

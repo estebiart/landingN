@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, FileText } from "lucide-react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
 const products = [
     {
@@ -9,11 +8,12 @@ const products = [
     category: "Suplemento mineral. Mantenimiento",
     purpose: "Suplemento mineral especializado para hatos bovinos, optima en niveles de macro y micro minerales, imprescindibles para el correcto desarrollo y producción tanto de hembras y machos en diferentes etapas productivas.",
     idealUse: " Crecimiento, desarrollo, adecuada actividad del sistema inmune y balance metabólico",
-    attribute: "Formula que restablece el balance mineral y promueve un mejor desempeño productivo del hato.",
+    attribute: "Fórmula que restablece el balance mineral y promueve un mejor desempeño productivo del hato.",
     image: "/sostiene.png",
     logoNombre: "/logos/Nutrimax_sostiene.png",
     indicacionHembras: "Para suministro a machos y hembras en etapas de cría, levante y ceba, siempre a libre disposición y con acceso ilimitado al agua.",
-    indicacionMachos: "Para suministro a machos y hembras en etapas de cría, levante y ceba, siempre a libre disposición y con acceso ilimitado al agua."
+    indicacionMachos: "Para suministro a machos y hembras en etapas de cría, levante y ceba, siempre a libre disposición y con acceso ilimitado al agua.",
+    fichaTecnica: "/fichas/02. Ficha tecnica SOSTIENE.pdf"
   },
     {
     name: "Nutrimax Produce 1",
@@ -24,7 +24,8 @@ const products = [
     image: "/produce-1.png",
     logoNombre: "/logos/Nutrimax-produce-1.png",
     indicacionHembras: "Suministre a terneras destetas, novillas de levante y vacas.",
-    indicacionMachos: "Suministre a toretes y toros, además de a machos de ceba."
+    indicacionMachos: "Suministre a toretes y toros, además de a machos de ceba.",
+    fichaTecnica: "/fichas/03. Ficha tecnica PRODUCE 1.pdf"
   },
   {
     name: "Nutrimax Produce 2",
@@ -35,7 +36,8 @@ const products = [
     image: "/produce-2.png",
     logoNombre: "/logos/Nutrimax-produce-2.png",
     indicacionHembras: "Suministre a vacas secas o con gestaciones tempranas, novillas de levante intermedio, o previo al inicio de estación de monta.",
-    indicacionMachos: "Suministre a toretes y toros, además de a machos de ceba."
+    indicacionMachos: "Suministre a toretes y toros, además de a machos de ceba.",
+    fichaTecnica: "/fichas/04. Ficha tecnica PRODUCE 2.pdf"
   },
     {
     name: "Nutrimax Produce 3",
@@ -46,7 +48,8 @@ const products = [
     image: "/Produce-3.png",
     logoNombre: "/logos/Nutrimax-produce-3.png",
     indicacionHembras: "Vacas en lactancia y novillas, durante temporada de monta.",
-    indicacionMachos: "Suministre a toretes y toros, además de a machos de ceba durante la finalización."
+    indicacionMachos: "Suministre a toretes y toros, además de a machos de ceba durante la finalización.",
+    fichaTecnica: "/fichas/05. Ficha tecnica PRODUCE 3.pdf"
   },
     {
     name: "Nutrimax PREÑA+",
@@ -57,10 +60,11 @@ const products = [
     image: "/prena.png",
     logoNombre: "/logos/Nutrimax-prena.png",
     indicacionHembras: "Ideal para vacas de cría en periparto o inicio de la lactancia y estación de monta. En novillas de levante para cubrir sus requerimientos y promover crecimiento y desarrollo reproductivo.",
-    indicacionMachos: "En toretes y toros, ideal para un mayor desarrollo esquelético, rápido y eficiente crecimiento y preparación reproductiva."
+    indicacionMachos: "En toretes y toros, ideal para un mayor desarrollo esquelético, rápido y eficiente crecimiento y preparación reproductiva.",
+    fichaTecnica: "/fichas/01. Ficha tecnica PREÑA.pdf"
   },
   {
-    name: "Nutrimax +Pro",
+    name: "Nutrimax PROT",
     category: "Suplemento proteico y mineral de alto rendimiento. Productividad",
     purpose: "Suplemento Proteinado, con minerales biodisponibles, proteína verdadera y equivalente del NNP, 40% de proteína bruta, que potencia la actividad y crecimiento de la flora rumial del bovino, buscando mayor digestion, consumo voluntario y aprovechamiento de los forrajes.",
     idealUse: "El aporte del 40% de proteína bruta total permite mayor sintesis de de proteina microbiana, aporte de aminoacidos y mejor digestión de la fibra.",
@@ -68,7 +72,8 @@ const products = [
     image: "/+pro.png",
     logoNombre: "/logos/Nutrimax-pro.png",
     indicacionHembras: "Ideal para novillas de levante destinadas a programas de IATF o estación de monta.",
-    indicacionMachos: "Ideal en el destete, levante y finalización de la ceba."
+    indicacionMachos: "Ideal en el destete, levante y finalización de la ceba.",
+    fichaTecnica: "/fichas/06. Ficha tecnica PROT.pdf"
   },
 
 
@@ -132,7 +137,7 @@ const ProductCarousel = () => {
               <img
                 src={currentProduct.logoNombre}
                 alt={`Logo ${currentProduct.name}`}
-                className="h-16 md:h-20 w-auto object-contain"
+                className="h-16 md:h-18 w-auto object-contain"
               />
             </div>
 
@@ -148,7 +153,7 @@ const ProductCarousel = () => {
                 </div>
                                <div>
       
-                  <h4 className="text-sm font-bold  text-primary uppercase mb-2">Carácterísticas</h4>
+                  <h4 className="text-sm font-bold  text-primary uppercase mb-2">Características</h4>
                   <p className="text-sm   leading-relaxed">
                     {currentProduct.idealUse}
                   </p>
@@ -190,62 +195,13 @@ const ProductCarousel = () => {
 
             {/* Ver ficha técnica button */}
             <div className="text-center mt-8">
-              <Dialog>
-                <DialogTrigger asChild>
-                  <Button className="bg-secondary hover:bg-secondary/90 text-white px-8 py-6 rounded-xl font-semibold">
-                    <FileText className="mr-2 h-5 w-5" />
-                    Ver ficha técnica
-                  </Button>
-                </DialogTrigger>
-                <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
-                  <DialogHeader>
-                    <DialogTitle className="text-2xl font-bold text-primary">
-                      Ficha Técnica - {currentProduct.name}
-                    </DialogTitle>
-                  </DialogHeader>
-
-                  <div className="space-y-6 mt-4">
-                    <div className="grid md:grid-cols-2 gap-6">
-                      {/* Indicaciones Hembras */}
-                      <div className="bg-pink-50 p-6 rounded-xl border-2 border-pink-200">
-                        <h3 className="text-lg font-bold text-pink-700 mb-4 flex items-center">
-                          <img src="/icons/icono-hembras.svg" alt="Hembras" className="w-6 h-6 mr-2" />
-                          Indicación Hembras
-                        </h3>
-                        <p className="text-sm text-foreground leading-relaxed">
-                          {currentProduct.indicacionHembras}
-                        </p>
-                      </div>
-
-                      {/* Indicaciones Machos */}
-                      <div className="bg-blue-50 p-6 rounded-xl border-2 border-blue-200">
-                        <h3 className="text-lg font-bold text-blue-700 mb-4 flex items-center">
-                          <img src="/icons/icono-machos.svg" alt="Machos" className="w-6 h-6 mr-2" />
-                          Indicación Machos
-                        </h3>
-                        <p className="text-sm text-foreground leading-relaxed">
-                          {currentProduct.indicacionMachos}
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="bg-primary/5 p-6 rounded-xl border border-primary/20">
-                      <h4 className="font-bold text-primary mb-2"> Finalidad del Producto</h4>
-                      <p className="text-sm  ">{currentProduct.purpose}</p>
-                    </div>
-
-                    <div className="bg-secondary/5 p-6 rounded-xl border border-secondary/20">
-                      <h4 className="font-bold text-secondary mb-2">Uso Ideal</h4>
-                      <p className="text-sm  ">{currentProduct.idealUse}</p>
-                    </div>
-
-                    <div className="bg-primary/5 p-6 rounded-xl border border-primary/20">
-                      <h4 className="font-bold text-primary mb-2">Atributo</h4>
-                      <p className="text-sm  ">{currentProduct.attribute}</p>
-                    </div>
-                  </div>
-                </DialogContent>
-              </Dialog>
+              <Button
+                className="bg-secondary hover:bg-secondary/90 text-white px-8 py-6 rounded-xl font-semibold"
+                onClick={() => window.open(currentProduct.fichaTecnica, '_blank')}
+              >
+                <FileText className="mr-2 h-5 w-5" />
+                Ver ficha técnica
+              </Button>
             </div>
           </div>
 
@@ -269,12 +225,12 @@ const ProductCarousel = () => {
       </div>
   
       <div className="w-[100vw] p-[60px] bg-primary/95">
-        <div className="text-center mb-12 space-y-6 fade-up">
+        <div className="text-center  space-y-6 fade-up">
           <h2 className="text-3xl md:text-4xl  text-white leading-tight">
             ¿Pensando en <span className="text-secondary font-bold">suplementación estratégica?</span>
           </h2>
           <p className="text-base text-white max-w-4xl mx-auto  leading-relaxed">
-         Nuestros expertos en nutrición bovina están listos para asesorarte, elegir el producto ideal  e instaurar el plan nutricional que mejor se adapta a tu hato ganadero.
+         Nuestros expertos en nutrición bovina están listos para asesorarle, elegir el producto ideal  e instaurar el plan nutricional que mejor se adapta a su finca ganadera.
           </p>
                   <Button
             className="bg-secondary hover:bg-secondary/90 text-primary text-base font-semibold"
