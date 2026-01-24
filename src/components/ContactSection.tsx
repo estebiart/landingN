@@ -182,7 +182,7 @@ const ContactSection = () => {
                   value={formData.mensaje}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-xl border-2 border-input bg-background text-foreground placeholder: /60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary resize-none transition-all"
-                  placeholder="Cuéntanos sobre suproyecto ganadero..."
+                  placeholder="Cuéntanos sobre su proyecto ganadero..."
                 />
               </div>
               
