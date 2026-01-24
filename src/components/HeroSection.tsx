@@ -24,7 +24,7 @@ style={{ backgroundImage: 'url("/banner.jpg")' }}
               </div>
             <div className=" md:flex-1 mb-6 flex flex-col justify-center">
               <div className="flex justify-end">
-              <h1 className="text-2xl inline-blockbackdrop-blur-sm rounded-3xl  bg-primary/90  md:text-5xl font-bold text-secondary-foreground w-[600px] px-8 py-6">
+              <h1 className="text-2xl inline-blockbackdrop-blur-sm rounded-3xl  bg-primary/90  md:text-3xl font-bold text-secondary-foreground w-[600px] px-8 py-6">
                  Suplementación nutricional estratégica para bovinos  
               </h1>
               </div>

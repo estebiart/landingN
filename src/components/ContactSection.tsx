@@ -124,7 +124,7 @@ const ContactSection = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-xl border-2 border-input bg-background text-foreground placeholder: /60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition-all"
-                    placeholder="sunombre"
+                    placeholder="S Nombre"
                   />
                 </div>
                 <div>
@@ -138,7 +138,7 @@ const ContactSection = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-xl border-2 border-input bg-background text-foreground placeholder: /60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition-all"
-                    placeholder="suapellido"
+                    placeholder="Su Apellido"
                   />
                 </div>
               </div>
