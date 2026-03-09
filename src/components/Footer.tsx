@@ -90,6 +90,13 @@ const Footer = () => {
         <div className="border-t border-white/20 pt-8 text-center space-y-2">
           <p className="text-white/90 font-semibold">NUTRIMAX – De ganaderos para ganaderos</p>
           <p className="text-white/60 text-sm">&copy; 2026 GENPRO. Todos los derechos reservados.</p>
+          <a
+            href="https://www.estebiart.com/"
+            target="_blank"
+            className="inline-block text-sm text-white/70 underline underline-offset-4 transition-colors hover:text-white"
+          >
+            Creado por esterbiart
+          </a>
         </div>
       </div>
     </footer>
