@@ -93,9 +93,16 @@ const Footer = () => {
           <a
             href="https://www.estebiart.com/"
             target="_blank"
-            className="inline-block text-sm text-white/70 underline underline-offset-4 transition-colors hover:text-white"
+            rel="noopener noreferrer"
+            aria-label="Creado por ESTEBIART"
+            className="group inline-flex items-center gap-2 pt-2 text-sm text-white/70 transition-colors hover:text-white"
           >
-            Creado por esterbiart
+            <span>Creado por</span>
+            <img
+              src="/logo-estebiart.png"
+              alt="ESTEBIART"
+              className="h-5 w-auto opacity-80 transition-all duration-300 [filter:brightness(0)_invert(1)] group-hover:opacity-100 group-hover:[filter:none]"
+            />
           </a>
         </div>
       </div>
